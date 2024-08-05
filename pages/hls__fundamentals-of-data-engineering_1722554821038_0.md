@@ -1,5 +1,6 @@
 file:: [fundamentals-of-data-engineering_1722554821038_0.pdf](../assets/fundamentals-of-data-engineering_1722554821038_0.pdf)
 file-path:: ../assets/fundamentals-of-data-engineering_1722554821038_0.pdf
+id:: 66ac19df-a0a5-48f6-bf61-f4bb61b5d97a
 
 - Very often, data scientists struggled with basic problems that their background and training did not address—data collection, data cleansing, data access, data transformation, and data infrastructure. These are problems that data engineering aims to solve.
   ls-type:: annotation
