@@ -1,4 +1,6 @@
-# What's the difference between the 3 modes of performing a PR in github?
+tags:: [[git]]
+
+- # What's the difference between the 3 modes of performing a PR in github?
 - The three main modes of performing a Pull Request (PR) in GitHub are **Merge**, **Rebase**, and **Squash**. Here's the difference between them:
 - ## Merge
 	- **Operation**: Combines all commits from the source branch into the target branch with a merge commit.
