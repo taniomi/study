@@ -423,4 +423,5 @@
  :default-home {:page "dataeng"}
  :journal/page-title-format "yyyy-MM-dd"
  :graph/settings {:orphan-pages? true
- :excluded-pages? false}}
+ :excluded-pages? false}
+ :feature/enable-flashcards? false}
