@@ -5,7 +5,7 @@ tags:: [[git]]
   	https://www.conventionalcommits.org/en/v1.0.0/
   	https://dev.to/ashishxcode/mastering-the-art-of-writing-effective-github-commit-messages-5d2p
 - # Commit type can include the following:
-  feat – a new feature is introduced with the changes
+- feat – a new feature is introduced with the changes
   
   fix – a bug fix has occurred
   
@@ -27,7 +27,7 @@ tags:: [[git]]
   
   revert – reverts a previous commit
 - # Commit Style
-  Betweeen square brackets or before comma, ALL CAPS or lower case. Both are fine. 
+- Betweeen square brackets or before comma, ALL CAPS or lower case. Both are fine. 
   Aim for consistency.
   [TYPE] message
   type: message

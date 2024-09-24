@@ -50,5 +50,10 @@ tags:: jornada-dados
 	  docker run ...
 	  ```
 	- `Dockerfile` é o `yaml` do CI (Continuous Integration)
+- # `52:00` Enviar para o Render (ambiente de QA)
+	- ## O que é Render?
+		- Render é uma *cloud* que tem tipo gratuito. É como um nível abaixo da Microsoft e da AWS.
+		- Heroku era uma cloud que tinha tier gratuito. A Salesforce tirou a gratuidade e outros provedores, como Render, surgiu.
+		- `58:44`
 - # Referências
 	- [^1]: https://opencontainers.org/ "Open Containers Initiative"
