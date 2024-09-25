@@ -86,7 +86,7 @@ tags:: jornada-dados
 		    ``$ poetry add [lib name]``
 	- ## Visualizar libs instaladas com poetry no venv
 		- ``$ poetry shell``
-		    ``$ pip freeze``
+		  ``$ pip freeze``
 	- ## Deletar uma lib
 		- ``$ poetry remove [lib name]``
 	- Poetry remove a lib e todas as dependências
