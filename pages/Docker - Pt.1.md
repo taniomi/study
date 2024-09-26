@@ -4,7 +4,7 @@ tags:: jornada-dados
 	- Docker veio para ajudar a fazer deploy de apps (qualquer coisa que rode é um aplicativo, seja ETL, dashboard, etc.)
 	- Docker roda a Docker engine, que é um kernel do Linux. O Docker roda Linux!
 	- A ideia do Docker é que o container você faz como um git pull de imagens de aplicativos que deseja usar, e não é preciso instalar na unha, as configs do setup vêm na imagem.
-	- O Docker usa o [Open CI (Open Container Initiative)][^1] para construir os containers
+	- O Docker usa o Open CI[^1] (Open Container Initiative) para construir os containers
 - # Como o Docker funciona?
 	- ![image.png](../assets/image_1721401727142_0.png)
 	- Docker e Podman usam Open CI e são equivalentes.
@@ -50,10 +50,14 @@ tags:: jornada-dados
 	  docker run ...
 	  ```
 	- `Dockerfile` é o `yaml` do CI (Continuous Integration)
-- # `52:00` Enviar para o Render (ambiente de QA)
+- # Enviar para o Render (ambiente de QA)
+  timestamp:: 00:52:00
 	- ## O que é Render?
-		- Render é uma *cloud* que tem tipo gratuito. É como um nível abaixo da Microsoft e da AWS.
+		- Render[^2] é uma *cloud* que tem tipo gratuito. É como um nível abaixo da Microsoft e da AWS.
 		- Heroku era uma cloud que tinha tier gratuito. A Salesforce tirou a gratuidade e outros provedores, como Render, surgiu.
-		- `58:44`
+	- ## CI/CD com Render
+		- Conectar repo *git* ao *Render* e bloquear a *main* para que receba *commits* somente de PR. Já tem a checagem, o PR e integração com o *Render*. Com isso, já tem uma estrutura completa e básica de **CI/CD** (*Continuous Integration/Continuous Delivery*).
+		- 1:10:00
 - # Referências
 	- [^1]: https://opencontainers.org/ "Open Containers Initiative"
+	- [^2]: https://render.com/
