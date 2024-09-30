@@ -1,10 +1,13 @@
 tags:: jornada-dados
+id:: 66f1fadd-a187-41a8-896e-07e0491b6d18
 
 - # Por que o Docker?
-	- Docker veio para ajudar a fazer deploy de apps (qualquer coisa que rode é um aplicativo, seja ETL, dashboard, etc.)
+	- Docker veio para ajudar a fazer *deploy* de apps (qualquer coisa que rode é um aplicativo, seja ETL, dashboard, etc.)
+	- Com o Docker, o mesmo código roda na máquina local, na máquina do seu colega, no *Render* e também na *AWS*!
+	- ![image.png](../assets/image_1727735514393_0.png)
 	- Docker roda a Docker engine, que é um kernel do Linux. O Docker roda Linux!
 	- A ideia do Docker é que o container você faz como um git pull de imagens de aplicativos que deseja usar, e não é preciso instalar na unha, as configs do setup vêm na imagem.
-	- O Docker usa o Open CI[^1] (Open Container Initiative) para construir os containers
+	- O Docker usa o Open CI[^1] (Open Container Initiative) para construir os containers.
 - # Como o Docker funciona?
 	- ![image.png](../assets/image_1721401727142_0.png)
 	- Docker e Podman usam Open CI e são equivalentes.
@@ -57,7 +60,12 @@ tags:: jornada-dados
 		- Heroku era uma cloud que tinha tier gratuito. A Salesforce tirou a gratuidade e outros provedores, como Render, surgiu.
 	- ## CI/CD com Render
 		- Conectar repo *git* ao *Render* e bloquear a *main* para que receba *commits* somente de PR. Já tem a checagem, o PR e integração com o *Render*. Com isso, já tem uma estrutura completa e básica de **CI/CD** (*Continuous Integration/Continuous Delivery*).
-		- 1:10:00
+- # AWS
+	- Atentar para diferença entre pagar por processamento e por tempo ligado.
+	- Terminating and stopping an instance is different. Terminating is eliminating the machine, stopping just puts the machine to sleep, but it still "exists".
+	- AWS usa SSH que nem o GitHub e o MySQL.
+	- ## Continuous Delivery na AWS
+		- GitHub actions e algumas configurações para atualizar automático o dashboard na AWS quando tem atualizações.
 - # Referências
 	- [^1]: https://opencontainers.org/ "Open Containers Initiative"
 	- [^2]: https://render.com/
