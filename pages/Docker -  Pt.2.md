@@ -16,7 +16,17 @@ tags:: [[jornada-dados]]
 		  docker pull mysql
 		  ```
 - # Múltiplos contâineres com docker-compose.yml
-	- O docker-compose é usado pra subir mais de um contâiner de uma vez só. É uma versão primitiva do *kubernetes*. Ex.: subir PostgreSQL e o pgAdmin 4 pra acessar o banco.
-	- `20:01`
+	- timestamp:: 00:20:01
+	- O docker-compose é usado pra subir mais de um contâiner de uma vez só. É uma versão primitiva do *kubernetes*. Ex.: subir PostgreSQL e o pgAdmin 4 pra acessar o banco [^1].
+	- ## Postgres +Streamlit + Python
+		- timestamp::  00:39:00
+	- ## ❓Como não expor credenciais no docker-compose
+		- timestamp::  00:50:30
+		- Quando rodar `docker run`, incluir as credenciais como variáveis de ambiente.
+- # Momento coach
+  background-color:: yellow
+	- timestamp:: 00:57:00
 - # Referências
-	- https://renatogroffe.medium.com/postgresql-pgadmin-4-docker-compose-montando-rapidamente-um-ambiente-para-uso-55a2ab230b89
+	- [^1]: https://renatogroffe.medium.com/postgresql-pgadmin-4-docker-compose-montando-rapidamente-um-ambiente-para-uso-55a2ab230b89
+	- [Linux Tips](https://www.youtube.com/@LinuxTips)
+	- [Fábio Akita - Começando aos 40](https://youtube.com/playlist?list=PLdsnXVqbHDUc7htGFobbZoNen3r_wm3ki&si=MfqmGNuHnt8aJBWP)
