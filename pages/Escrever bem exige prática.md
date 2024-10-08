@@ -17,3 +17,5 @@ tags:: [[essay]]
 - Depois, você entra em um ritmo natural de escrita personalizada que nem percebe o quanto isso se tornou parte de você.
 - Precisa engrenar.
 - Coloque em prática hoje.
+- # Referências
+	- [Quando for escrever seus posts - Victor Wendt](https://www.linkedin.com/posts/victorwendt_quando-for-escrever-seus-posts-fa%C3%A7a-activity-7249388194914287616-g2hx?utm_source=share&utm_medium=member_desktop)

@@ -27,6 +27,6 @@ tags:: [[jornada-dados]]
   background-color:: yellow
 	- timestamp:: 00:57:00
 - # Referências
-	- [^1]: https://renatogroffe.medium.com/postgresql-pgadmin-4-docker-compose-montando-rapidamente-um-ambiente-para-uso-55a2ab230b89
+	- [^1]: [PostgreSQL + pgAdmin 4 + Docker Compose: montando rapidamente um ambiente para uso](https://renatogroffe.medium.com/postgresql-pgadmin-4-docker-compose-montando-rapidamente-um-ambiente-para-uso-55a2ab230b89)
 	- [Linux Tips](https://www.youtube.com/@LinuxTips)
 	- [Fábio Akita - Começando aos 40](https://youtube.com/playlist?list=PLdsnXVqbHDUc7htGFobbZoNen3r_wm3ki&si=MfqmGNuHnt8aJBWP)
