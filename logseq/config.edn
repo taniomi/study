@@ -299,7 +299,7 @@
  ;;  :charge-range    600}   ; Default value: 600
 
  ;; Favorites to list on the left sidebar
- :favorites ["data-eng" "essay" "git" "jornada-dados" "work"]
+ :favorites ["data-eng" "docs" "essay" "git" "jornada-dados" "work"]
 
  ;; Set flashcards interval.
  ;; Expected value:
@@ -424,4 +424,5 @@
  :journal/page-title-format "yyyy-MM-dd"
  :graph/settings {:orphan-pages? true
  :excluded-pages? false}
- :feature/enable-flashcards? false}
+ :feature/enable-flashcards? false
+ :ui/show-brackets? false}

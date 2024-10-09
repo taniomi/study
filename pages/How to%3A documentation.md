@@ -1,6 +1,8 @@
 tags:: docs
 
-- # Why write documentation?
+- *Here are notes I took from reading a bunch of articles on documentation.*
+- {{renderer :toc_6706c182-f4fe-4cd2-aa60-57bc00a9de5f}}
+- # Why write documentation? [^1]
 	- For you:
 		- You will be using your code in 6 months
 		- You want people to use your code and give you credit
@@ -12,12 +14,67 @@ tags:: docs
 		- Advance the science
 		- Encourage open science
 		- Allow reproducibility and transparency
-		  
-		  What should you document about your research? Everything! All the data, notes, code, and materials someone else would need to reproduce your work.
-		  
-		  Consider the following questions:
-	- **How is your data gathered?**
-	- **What variables did you use?**
-	- **Did you use any code to clean/analyze your data?**
+	- What should you document about your research? Everything! All the data, notes, code, and materials someone else would need to reproduce your work.
+	- Consider the following questions:
+		- **How is your data gathered?**
+		- **What variables did you use?**
+		- **Did you use any code to clean/analyze your data?**
+- # How to get started on documentation? [^2]
+	- ## Document the details that matter
+		- For any given software or system change, this might include any or all of the following:
+			- The context for the problem you’re solving
+			- Overview of the change you’re making
+			- Decisions made
+			- Consequences of actions
+			- Parts of the system with lots of history
+			- Things that will hurt in the future if forgotten
+	- ## Document the right things at the right time
+		- Minimize the time and effort spent on “detailed” plans, requirements, specifications, planned features, and architecture that can swiftly go stale.
+		- Be mindful of the depth of details you decide to capture.
+		- > *As a rule of thumb, documentation should be just detailed enough to help you and others do your jobs today without being so comprehensive that it bogs you down or quickly becomes unmaintainable and thus, unusable.*
+	- ## Choose the right documentation tools
+		- Documentation for developers might be stored in code repositories, and documentation for end users might be published as online help files or pdfs.
+	- ## Assign documentation owners and stewards
+		- Documentation should a part of the culture and be treated as a normal deliverable task.
+- # Some concrete steps to good docs [^3]
+	- > *The secret to good documentation is to write it while you're writing the code. You are your first audience. Explain what you're doing to yourself. Future you will thank you!*
+	  — Victoria Drake [November 24, 2020](https://twitter.com/victoriadotdev/status/1331262801797652483?ref_src=twsrc%5Etfw)
+	- ## 1. Accurate notes
+		- Bash commands
+		- Why did something a specific way
+		- Visited URLs
+	- ## 2. Long-form notes
+		- Quirky-looking decisions: “I would normally do it this way, but I chose to do something different because…”
+		- Challenges you ran into and how you overcame them
+		- Architectural decisions that support your project goals
+	- # 3. Don't neglect prerequisite knowledge
+		- API documentation links
+		- Installation steps
+- # What to include in software documentation [^4]
+	- What problem does your code solve?
+	- Small code example
+	- Link to your code and issue tracker
+	- Installation instructions
+	- ## [[README Template]]
+- # How to write great documentation? [^5]
+	- First, separate marketing/sales material from technical guides. Once someone has bought the software, stop selling and start educating.
+	- Second, identify your user workflows (and failflows) and create task-based documentation around those.
+	- Fourth, if you are not a professional writer or editor, do not micromanage documentation projects.
+	- Fifth, get your developers to do a brain dump when they're done coding something new.
+		- Record a video demonstrating the new feature.
+		- Create wiki pages that explain how things work.
+- # Small template
+	- What was built?
+	- Step by step
+	- What services were used?
+	- Diagrams/screenshots
+	- Keep it clear, concise and easy to understand
 - # References
-	- [How to Write Good Documentation: Home - Berkeley Library, University of California](https://guides.lib.berkeley.edu/how-to-write-good-documentation)
+	- [^1]: https://guides.lib.berkeley.edu/how-to-write-good-documentation
+		- [Natural Docs](https://www.naturaldocs.org/getting_started/)
+	- [^2]: https://medium.com/analysts-corner/the-art-of-writing-good-documentation-6e4ce4cd3126
+	- [^3]: https://www.freecodecamp.org/news/how-to-write-good-documentation/
+	- [^4]: https://www.writethedocs.org/guide/writing/beginners-guide-to-docs/
+		- [Readme Driven Development](https://tom.preston-werner.com/2010/08/23/readme-driven-development.html)
+		- [Write the Docs Guide](https://www.writethedocs.org/guide/)
+	- [^5]: https://www.reddit.com/r/programming/comments/8xljg/how_to_write_great_documentation/
