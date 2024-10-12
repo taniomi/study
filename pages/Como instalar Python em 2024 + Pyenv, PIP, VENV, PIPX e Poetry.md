@@ -1,4 +1,4 @@
-tags:: jornada-dados
+tags:: [[jornada-dados]] [[python]]
 
 - Jornada de Dados [02] Como instalar Python em 2024 + Pyenv, PIP, VENV, PIPX e Poetry
   [Como instalar Python em 2024 + Pyenv, PIP, VENV, PIPX e Poetry](https://youtu.be/9LYqtLuD7z4)

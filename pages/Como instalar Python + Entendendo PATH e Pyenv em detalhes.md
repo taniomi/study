@@ -1,4 +1,4 @@
-tags:: jornada-dados
+tags:: [[jornada-dados]] [[python]]
 
 - Jornada de Dados [03] Como instalar Python + Entendendo PATH e Pyenv em detalhes
 - # PYENV

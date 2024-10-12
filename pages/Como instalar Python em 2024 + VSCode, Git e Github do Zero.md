@@ -1,4 +1,4 @@
-tags:: jornada-dados
+tags:: [[jornada-dados]] [[python]]
 
 - Jornada de Dados [01] Como instalar Python em 2024 + VSCode, Git e Github do Zero
   [Como instalar Python em 2024 + VSCode, Git e Github do Zero](https://youtu.be/-M4pMd2yQOM)

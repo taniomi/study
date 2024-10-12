@@ -47,7 +47,7 @@ tags:: docs
 		- Quirky-looking decisions: “I would normally do it this way, but I chose to do something different because…”
 		- Challenges you ran into and how you overcame them
 		- Architectural decisions that support your project goals
-	- # 3. Don't neglect prerequisite knowledge
+	- ## 3. Don't neglect prerequisite knowledge
 		- API documentation links
 		- Installation steps
 - # What to include in software documentation [^4]
