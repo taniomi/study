@@ -26,7 +26,15 @@ tags:: [[jornada-dados]]
 - # Momento coach
   background-color:: yellow
 	- timestamp:: 00:57:00
+- # docker-compose.yml
+	- Checar versão [^2]:
+	  ```bash
+	  docker-compose --version
+	  ```
+	- Se for v2, não precisa especificar versão no docker-compose.yml [^3]
 - # Referências
-	- [^1]: [PostgreSQL + pgAdmin 4 + Docker Compose: montando rapidamente um ambiente para uso](https://renatogroffe.medium.com/postgresql-pgadmin-4-docker-compose-montando-rapidamente-um-ambiente-para-uso-55a2ab230b89)
+	- [^1]: ([PostgreSQL + Docker Compose: criando rapidamente ambientes e populando bases para testes](https://renatogroffe.medium.com/postgresql-pgadmin-4-docker-compose-montando-rapidamente-um-ambiente-para-uso-55a2ab230b89))
 	- [Linux Tips](https://www.youtube.com/@LinuxTips)
 	- [Fábio Akita - Começando aos 40](https://youtube.com/playlist?list=PLdsnXVqbHDUc7htGFobbZoNen3r_wm3ki&si=MfqmGNuHnt8aJBWP)
+	- [^2]: ([How to Create a MySql Instance with Docker Compose](https://medium.com/@chrischuck35/how-to-create-a-mysql-instance-with-docker-compose-1598f3cc1bee))
+	- [^3]: ([Do you need to put the version at the top of docker-compose.yml file?](https://forums.docker.com/t/do-you-need-to-put-the-version-at-the-top-of-docker-compose-yml-file/135863))
