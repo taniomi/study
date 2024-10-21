@@ -1,0 +1,23 @@
+tags:: work
+
+-
+- # Who?
+	- Chaitali Narla, she got 5 promotions in 10 years and got to Director at Google in that short amount of time.
+- # The 3 Key Principles
+	- ## Glue
+		- Being Glue or doing Glue work is about those tasks that are boring and necessary, but don't showcase technical skill. Like 1:1s, meetings, reviews.
+		- This work **is** important, but if there's too much glue work, you don't do your actual work. You help others and facilitate so that they do their work, but yours is neglected.
+		- So, balance glue work and technical work.
+		- ### In defense of glue work
+			- Glue work is your opportunity to show leadership skills.
+			- Glue work involves people and facilitating their work, so that everything comes together.
+		- > You need to balance leadership examples and technical deliverables to get a promotion.
+	- ## Grit
+		- Grit is about being able to take hits and stand up again. It is about being resilient and knowing that you can only be a loser if you stop trying altogether.
+	- ## Friction
+		- Friction is the delta between the ideal and reality.
+		- Search for things you can do to reduce that delta.
+		- Offer to take on some task, offer help, prepare beforehand so that you don't have to look for information during a meeting.
+		- Don't be blocked in a task and simply sit at the mercy of other people.
+- # References
+	- [3 Career Principles that got me to Director at Google](https://read.highgrowthengineer.com/p/3-career-principles-to-director-at-google)
