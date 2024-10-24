@@ -24,3 +24,8 @@ tags:: [[dio/contribute-open-source]], git
 			- `git remote add origin SSH-option`
 		- `04:43`
 		  logseq.order-list-type:: number
+- # References
+	- [Writing on GitHub](https://docs.github.com/en/get-started/writing-on-github)
+	- [Managing Labels on GitHub](https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels)
+	- [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
+	- [dio-lab-open-source](https://github.com/digitalinnovationone/dio-lab-open-source)
