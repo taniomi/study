@@ -29,3 +29,5 @@ tags:: [[dio/docker]], [[data-eng]]
 		- Os dois contâineres podem estar ligados no mesmo banco de dados.
 		- E os contâineres também podem conversar entre si.
 		- ![image.png](../assets/image_1730244276531_0.png)
+- # References
+	- Drawing tool: https://www.tldraw.com/
