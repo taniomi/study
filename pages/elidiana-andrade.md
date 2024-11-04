@@ -1,3 +1,5 @@
+tags:: [[dio]]
+
 - Dev Front-End
 - Pós-Graduação em Desenvolvimento de Software
 - Gosta de compartilhar conhecimento

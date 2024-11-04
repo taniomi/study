@@ -1,5 +1,6 @@
 tags:: [[dio/docker]], [[data-eng]]
 
+- instructor:: [[felipe-aguiar]]
 - # Qual problema o Docker veio resolver?
 	- Cada um desenvolvendo em um sistema operacional diferente, dependências diferentes, arquivos .dll diferentes.
 	- ![image.png](../assets/image_1730242636239_0.png)
