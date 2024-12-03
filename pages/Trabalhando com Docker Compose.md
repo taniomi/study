@@ -181,6 +181,7 @@ tags:: [[dio/docker]], [[data-eng]]
 		  
 		  </html>
 		  ```
--
+- # Utilizando exemplos do GitHub do Docker [^2]
 - # Referências
 	- [^1]: https://stackoverflow.com/a/66516826/23164295
+	- [^2]: https://github.com/docker/awesome-compose
