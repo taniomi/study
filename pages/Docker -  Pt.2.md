@@ -1,4 +1,4 @@
-tags:: [[jornada-dados]]
+tags:: [[data-eng]], [[jornada-dados]]
 
 - # Perguntas diversas
 	- ## Qual a diferença entre *terraform* e *kubernetes*?
