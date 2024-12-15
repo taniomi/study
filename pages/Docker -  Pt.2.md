@@ -1,5 +1,6 @@
 tags:: [[data-eng]], [[jornada-dados]]
 
+- instructor:: [[luciano-galvao]]
 - # Perguntas diversas
 	- ## Qual a diferença entre *terraform* e *kubernetes*?
 		- *terraform*: cuida da infraestrutura da cloud

@@ -1,6 +1,7 @@
 id:: 66f1fadd-a187-41a8-896e-07e0491b6d18
 tags:: jornada-dados, [[data-eng]]
 
+- instructor:: [[luciano-galvao]]
 - # Por que o Docker?
 	- Docker veio para ajudar a fazer *deploy* de apps (qualquer coisa que rode é um aplicativo, seja ETL, dashboard, etc.)
 	- Com o Docker, o mesmo código roda na máquina local, na máquina do seu colega, no *Render* e também na *AWS*!

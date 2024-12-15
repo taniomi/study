@@ -19,7 +19,18 @@ tags:: [[data-eng]]
 	  :END:
 - ### Bootcamp Python
   background-color:: green
-	- [[Aula 01 - Python, Git e VS Code]]
+	- DONE [[Aula 01 - Python, Git e VS Code]]
+	  :LOGBOOK:
+	  CLOCK: [2024-12-15 Sun 10:50:59]
+	  CLOCK: [2024-12-15 Sun 11:22:45]
+	  CLOCK: [2024-12-15 Sun 11:22:46]--[2024-12-15 Sun 11:30:50] =>  00:08:04
+	  :END:
+	- DONE [[Aula 02 - TypeError, Check e Conversion, try-except e if]]
+	  :LOGBOOK:
+	  CLOCK: [2024-12-15 Sun 11:24:00]--[2024-12-15 Sun 11:24:00] =>  00:00:00
+	  CLOCK: [2024-12-15 Sun 11:30:54]--[2024-12-15 Sun 12:04:02] =>  00:33:08
+	  :END:
+	- LATER [[Aula 03 - Controle de Fluxo: DEBUG, IF, FOR, WHILE, listas e dicts]]
 	- [GitHub](https://github.com/lvgalvao/data-engineering-roadmap/tree/main/Bootcamp%20-%20Python%20para%20dados)
 - ### Infra, Linux, Docker
   background-color:: blue

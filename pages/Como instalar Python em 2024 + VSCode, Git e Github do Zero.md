@@ -1,5 +1,6 @@
 tags:: [[jornada-dados]] [[python]]
 
+- instructor:: [[luciano-galvao]]
 - Jornada de Dados [01] Como instalar Python em 2024 + VSCode, Git e Github do Zero
   [Como instalar Python em 2024 + VSCode, Git e Github do Zero](https://youtu.be/-M4pMd2yQOM)
 - # 01 PYTHON

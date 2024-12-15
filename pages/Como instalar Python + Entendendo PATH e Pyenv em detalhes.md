@@ -1,5 +1,6 @@
 tags:: [[jornada-dados]] [[python]]
 
+- instructor:: [[luciano-galvao]]
 - Jornada de Dados [03] Como instalar Python + Entendendo PATH e Pyenv em detalhes
 - # PYENV
 	- ## Instalando pyenv clonando o repo do github
