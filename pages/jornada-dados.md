@@ -30,7 +30,14 @@ tags:: [[data-eng]]
 	  CLOCK: [2024-12-15 Sun 11:24:00]--[2024-12-15 Sun 11:24:00] =>  00:00:00
 	  CLOCK: [2024-12-15 Sun 11:30:54]--[2024-12-15 Sun 12:04:02] =>  00:33:08
 	  :END:
-	- LATER [[Aula 03 - Controle de Fluxo: DEBUG, IF, FOR, WHILE, listas e dicts]]
+	- DONE [[Aula 03 - Controle de Fluxo: DEBUG, IF, FOR, WHILE, listas e dicts]]
+	  :LOGBOOK:
+	  CLOCK: [2024-12-22 Sun 10:30:13]--[2024-12-22 Sun 10:30:44] =>  00:00:31
+	  :END:
+	- NOW [[Aula 04 - Tipos complexos e TypeHint (Dicts vs DataFrames vs Tables vs Excel)]]
+	  :LOGBOOK:
+	  CLOCK: [2024-12-22 Sun 10:33:53]
+	  :END:
 	- [GitHub](https://github.com/lvgalvao/data-engineering-roadmap/tree/main/Bootcamp%20-%20Python%20para%20dados)
 - ### Infra, Linux, Docker
   background-color:: blue
