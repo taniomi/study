@@ -48,9 +48,10 @@ tags:: [[dio/docker]]
 	  CMD [ "python", "./your-daemon-or-script.py" ]
 	  ```
 	- A imagem do python é bem maior do que se criar uma imagem do ubuntu e colocar python lá dentro. Por quê?
+	  background-color:: red
 - # Gerando uma imagem MULTISTAGE
 	- Compilações multiestágio
-	- Criar bin (binário) da uma aplicação (imagem de linguagem de programação para programar)
+	- Criar bin (binário) de uma aplicação (imagem de linguagem de programação para programar)
 	  logseq.order-list-type:: number
 	- Rodar o bin (container linux)
 	  logseq.order-list-type:: number
@@ -87,7 +88,7 @@ tags:: [[dio/docker]]
 		  
 		  WORKDIR /go/src/app/
 		  
-		  RUN go build -o app.go .  # código gerando um executável, RUN é diferentee
+		  RUN go build -o app.go .  # código gerando um executável, RUN é diferente
 		  
 		  # stage 2
 		  FROM alpine
