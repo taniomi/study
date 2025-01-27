@@ -299,7 +299,7 @@
  ;;  :charge-range    600}   ; Default value: 600
 
  ;; Favorites to list on the left sidebar
- :favorites ["data-eng" "dio" "docs" "essay" "git" "jornada-dados" "python" "work"]
+ :favorites ["data-eng" "dio" "docs" "essay" "git" "jornada-dados" "python" "rd" "work"]
 
  ;; Set flashcards interval.
  ;; Expected value:
