@@ -1,5 +1,6 @@
 ### Level 1 - Incompetente inconsciente
 background-color:: gray
+collapsed:: true
 	- #### Module 01 - Módulo gratuito
 	  background-color:: gray
 		- DONE Aula 01 - O cérebro de quem não dorme bem![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-check.svg)Video - 25 min
@@ -14,6 +15,7 @@ background-color:: gray
   background-color:: red
 	- #### Module 01 - Comece por aqui
 	  background-color:: red
+	  collapsed:: true
 		- DONE Aula 01 - Boas-vindas![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-check.svg)Video - 2 min
 		  :LOGBOOK:
 		  CLOCK: [2025-01-27 Mon 16:44:55]--[2025-01-27 Mon 16:44:55] =>  00:00:00
@@ -48,6 +50,7 @@ background-color:: gray
 		  :END:
 	- #### Module 02 - Para você
 	  background-color:: red
+	  collapsed:: true
 		- DONE Aula 01 - Como funciona esse módulo![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-check.svg)Video - 1 min
 		  :LOGBOOK:
 		  CLOCK: [2025-01-27 Mon 16:46:24]--[2025-01-27 Mon 16:46:24] =>  00:00:00
