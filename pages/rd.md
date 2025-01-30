@@ -82,12 +82,41 @@ collapsed:: true
 		  :LOGBOOK:
 		  CLOCK: [2025-01-27 Mon 16:47:57]--[2025-01-27 Mon 16:47:57] =>  00:00:00
 		  :END:
-		- NOW Aula 03 - 072 - Somos um novo nicho (o estilo de vida RD)![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-play-list.svg)Video - 46 min
+		- DONE Aula 03 - 072 - Somos um novo nicho (o estilo de vida RD)![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-play-list.svg)Video - 46 min
 		  :LOGBOOK:
-		  CLOCK: [2025-01-27 Mon 16:47:59]
+		  CLOCK: [2025-01-27 Mon 16:47:59]--[2025-01-30 Thu 14:09:33] =>  69:21:34
 		  :END:
 	- #### Module 04 - Sprint 1 - Cuide do seu sono
 	  background-color:: red
+		- NOW Aula 01 - Sprint 1 - Higiene do Sono![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-play-list.svg)Video - 3 min![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-lock-lesson.svg)
+		  :LOGBOOK:
+		  CLOCK: [2025-01-30 Thu 14:10:30]--[2025-01-30 Thu 14:10:31] =>  00:00:01
+		  CLOCK: [2025-01-30 Thu 14:10:36]
+		  :END:
+		- LATER Aula 02 - 081 - A nova aula 007: Como dormir bem![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-play-list.svg)Video - 42 min![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-lock-lesson.svg)
+		  :LOGBOOK:
+		  CLOCK: [2025-01-30 Thu 14:10:30]--[2025-01-30 Thu 14:10:31] =>  00:00:01
+		  :END:
+		- LATER Aula 03 -145 - Dormir mal e pensamentos intrusivos![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-play-list.svg)Video - 22 min![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-lock-lesson.svg)
+		  :LOGBOOK:
+		  CLOCK: [2025-01-30 Thu 14:10:30]--[2025-01-30 Thu 14:10:31] =>  00:00:01
+		  :END:
+		- LATER Aula 04 - 093 - Luz, comida e exercício - ajuste seu ciclo circadiano![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-play-list.svg)Video - 44 min![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-lock-lesson.svg)
+		  :LOGBOOK:
+		  CLOCK: [2025-01-30 Thu 14:10:30]--[2025-01-30 Thu 14:10:31] =>  00:00:01
+		  :END:
+		- LATER Aula 05 - 049 - O cérebro de quem dorme mal![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-play-list.svg)Video - 66 min![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-lock-lesson.svg)
+		  :LOGBOOK:
+		  CLOCK: [2025-01-30 Thu 14:10:30]--[2025-01-30 Thu 14:10:31] =>  00:00:01
+		  :END:
+		- LATER Aula 06 - 104 - O sono de quem trabalha em turnos (e como manejar)![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-play-list.svg)Video - 31 min![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-lock-lesson.svg)
+		  :LOGBOOK:
+		  CLOCK: [2025-01-30 Thu 14:10:30]--[2025-01-30 Thu 14:10:31] =>  00:00:01
+		  :END:
+		- LATER Aula 07 - 007 - Como dormir bem: guia completo![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-check.svg)Video - 50 min
+		  :LOGBOOK:
+		  CLOCK: [2025-01-30 Thu 14:10:30]--[2025-01-30 Thu 14:10:31] =>  00:00:01
+		  :END:
 - ### Level 3 - Conquistador
   background-color:: blue
 - ### Level 4 - Guardião
