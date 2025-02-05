@@ -88,14 +88,15 @@ collapsed:: true
 		  :END:
 	- #### Module 04 - Sprint 1 - Cuide do seu sono
 	  background-color:: red
-		- NOW Aula 01 - Sprint 1 - Higiene do Sono![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-play-list.svg)Video - 3 min![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-lock-lesson.svg)
+		- DONE Aula 01 - Sprint 1 - Higiene do Sono![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-play-list.svg)Video - 3 min![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-lock-lesson.svg)
 		  :LOGBOOK:
 		  CLOCK: [2025-01-30 Thu 14:10:30]--[2025-01-30 Thu 14:10:31] =>  00:00:01
-		  CLOCK: [2025-01-30 Thu 14:10:36]
+		  CLOCK: [2025-01-30 Thu 14:10:36]--[2025-02-05 Wed 10:53:43] =>  140:43:07
 		  :END:
-		- LATER Aula 02 - 081 - A nova aula 007: Como dormir bem![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-play-list.svg)Video - 42 min![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-lock-lesson.svg)
+		- NOW Aula 02 - 081 - A nova aula 007: Como dormir bem![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-play-list.svg)Video - 42 min![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-lock-lesson.svg)
 		  :LOGBOOK:
 		  CLOCK: [2025-01-30 Thu 14:10:30]--[2025-01-30 Thu 14:10:31] =>  00:00:01
+		  CLOCK: [2025-02-05 Wed 10:53:44]
 		  :END:
 		- LATER Aula 03 -145 - Dormir mal e pensamentos intrusivos![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-play-list.svg)Video - 22 min![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-lock-lesson.svg)
 		  :LOGBOOK:
