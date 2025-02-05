@@ -13,5 +13,7 @@ tags:: [[data-eng]] , [[python]]
 		- ```python
 		  df[df['x'] == y]['x'] = z
 		  ```
+- # Method Chaining with .pipe()[^2]
 - # References
 	- [^1]: https://www.kdnuggets.com/2020/04/stop-hurting-pandas.html
+	- [^2]: https://tomaugspurger.net/posts/method-chaining/
