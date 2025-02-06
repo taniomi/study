@@ -74,6 +74,7 @@ collapsed:: true
 		  :END:
 	- #### Module 03 - Curso de iniciação RD
 	  background-color:: red
+	  collapsed:: true
 		- DONE Aula 01 - Torne-se um RD![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-check.svg)Video - 1 min
 		  :LOGBOOK:
 		  CLOCK: [2025-01-27 Mon 16:47:55]--[2025-01-27 Mon 16:47:56] =>  00:00:01
