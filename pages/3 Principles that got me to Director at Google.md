@@ -1,6 +1,5 @@
 tags:: work
 
--
 - # Who?
 	- Chaitali Narla, she got 5 promotions in 10 years and got to Director at Google in that short amount of time.
 - # The 3 Key Principles

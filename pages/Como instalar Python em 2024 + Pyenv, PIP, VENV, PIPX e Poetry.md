@@ -102,3 +102,6 @@ tags:: [[jornada-dados]] [[python]]
 		    ".venv(Python [venv version])"
 	- ## Exportando dependências para requests.txt de poetry.lock
 		- ``$ poetry export --output requirements.txt``
+- # Material Adicional
+	- [[uv]]
+	- [Python Dependency Management is a Dumpster Fire](https://nielscautaerts.xyz/python-dependency-management-is-a-dumpster-fire.html)
