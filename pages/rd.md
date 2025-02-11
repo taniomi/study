@@ -1,6 +1,9 @@
-### Level 1 - Incompetente inconsciente
-background-color:: gray
-collapsed:: true
+tags:: [[neuroscience]]
+
+- instructor:: [[eslen-delanogare]]
+- ### Level 1 - Incompetente inconsciente
+  background-color:: gray
+  collapsed:: true
 	- #### Module 01 - Módulo gratuito
 	  background-color:: gray
 		- DONE Aula 01 - O cérebro de quem não dorme bem![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-check.svg)Video - 25 min
