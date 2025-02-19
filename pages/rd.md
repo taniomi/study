@@ -97,28 +97,39 @@ tags:: [[neuroscience]]
 		  CLOCK: [2025-01-30 Thu 14:10:30]--[2025-01-30 Thu 14:10:31] =>  00:00:01
 		  CLOCK: [2025-01-30 Thu 14:10:36]--[2025-02-05 Wed 10:53:43] =>  140:43:07
 		  :END:
-		- NOW Aula 02 - 081 - A nova aula 007: Como dormir bem![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-play-list.svg)Video - 42 min![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-lock-lesson.svg)
+		- DONE Aula 02 - 081 - A nova aula 007: Como dormir bem![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-play-list.svg)Video - 42 min![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-lock-lesson.svg)
 		  :LOGBOOK:
 		  CLOCK: [2025-01-30 Thu 14:10:30]--[2025-01-30 Thu 14:10:31] =>  00:00:01
-		  CLOCK: [2025-02-05 Wed 10:53:44]
+		  CLOCK: [2025-02-05 Wed 10:53:44]--[2025-02-19 Wed 07:38:57] =>  332:45:13
 		  :END:
-		- LATER Aula 03 -145 - Dormir mal e pensamentos intrusivos![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-play-list.svg)Video - 22 min![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-lock-lesson.svg)
+		- DONE Aula 03 -145 - Dormir mal e pensamentos intrusivos![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-play-list.svg)Video - 22 min![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-lock-lesson.svg)
+		  :LOGBOOK:
+		  CLOCK: [2025-01-30 Thu 14:10:30]--[2025-01-30 Thu 14:10:31] =>  00:00:01
+		  CLOCK: [2025-02-19 Wed 07:39:02]--[2025-02-19 Wed 07:39:04] =>  00:00:02
+		  CLOCK: [2025-02-19 Wed 07:39:04]--[2025-02-19 Wed 07:39:05] =>  00:00:01
+		  CLOCK: [2025-02-19 Wed 07:39:05]--[2025-02-19 Wed 07:39:05] =>  00:00:00
+		  CLOCK: [2025-02-19 Wed 07:39:06]--[2025-02-19 Wed 07:39:06] =>  00:00:00
+		  CLOCK: [2025-02-19 Wed 07:39:06]--[2025-02-19 Wed 07:39:07] =>  00:00:01
+		  CLOCK: [2025-02-19 Wed 07:39:08]--[2025-02-19 Wed 07:39:20] =>  00:00:12
+		  CLOCK: [2025-02-19 Wed 07:39:22]--[2025-02-19 Wed 07:40:05] =>  00:00:43
+		  :END:
+		- DOING Aula 04 - 093 - Luz, comida e exercício - ajuste seu ciclo circadiano![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-play-list.svg)Video - 44 min![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-lock-lesson.svg)
+		  :LOGBOOK:
+		  CLOCK: [2025-01-30 Thu 14:10:30]--[2025-01-30 Thu 14:10:31] =>  00:00:01
+		  CLOCK: [2025-02-19 Wed 07:39:12]--[2025-02-19 Wed 07:39:13] =>  00:00:01
+		  CLOCK: [2025-02-19 Wed 07:39:14]--[2025-02-19 Wed 07:39:14] =>  00:00:00
+		  CLOCK: [2025-02-19 Wed 07:39:15]--[2025-02-19 Wed 07:39:15] =>  00:00:00
+		  CLOCK: [2025-02-19 Wed 07:40:16]
+		  :END:
+		- TODO Aula 05 - 049 - O cérebro de quem dorme mal![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-play-list.svg)Video - 66 min![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-lock-lesson.svg)
 		  :LOGBOOK:
 		  CLOCK: [2025-01-30 Thu 14:10:30]--[2025-01-30 Thu 14:10:31] =>  00:00:01
 		  :END:
-		- LATER Aula 04 - 093 - Luz, comida e exercício - ajuste seu ciclo circadiano![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-play-list.svg)Video - 44 min![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-lock-lesson.svg)
+		- TODO Aula 06 - 104 - O sono de quem trabalha em turnos (e como manejar)![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-play-list.svg)Video - 31 min![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-lock-lesson.svg)
 		  :LOGBOOK:
 		  CLOCK: [2025-01-30 Thu 14:10:30]--[2025-01-30 Thu 14:10:31] =>  00:00:01
 		  :END:
-		- LATER Aula 05 - 049 - O cérebro de quem dorme mal![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-play-list.svg)Video - 66 min![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-lock-lesson.svg)
-		  :LOGBOOK:
-		  CLOCK: [2025-01-30 Thu 14:10:30]--[2025-01-30 Thu 14:10:31] =>  00:00:01
-		  :END:
-		- LATER Aula 06 - 104 - O sono de quem trabalha em turnos (e como manejar)![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-play-list.svg)Video - 31 min![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-lock-lesson.svg)
-		  :LOGBOOK:
-		  CLOCK: [2025-01-30 Thu 14:10:30]--[2025-01-30 Thu 14:10:31] =>  00:00:01
-		  :END:
-		- LATER Aula 07 - 007 - Como dormir bem: guia completo![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-check.svg)Video - 50 min
+		- TODO Aula 07 - 007 - Como dormir bem: guia completo![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-check.svg)Video - 50 min
 		  :LOGBOOK:
 		  CLOCK: [2025-01-30 Thu 14:10:30]--[2025-01-30 Thu 14:10:31] =>  00:00:01
 		  :END:
