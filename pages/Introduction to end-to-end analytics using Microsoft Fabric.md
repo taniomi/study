@@ -1,3 +1,4 @@
+- [Module](https://learn.microsoft.com/en-gb/training/modules/introduction-end-analytics-use-microsoft-fabric/)
 - # Introduction
 	- Fabric includes the following services:
 		- Data engineering
