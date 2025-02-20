@@ -420,7 +420,7 @@
  ;;      ;use Percent-encoding for other invalid characters
  :file/name-format :triple-lowbar
  :feature/enable-journals? false
- :default-home {:page "jornada-dados"}
+ :default-home {:page "dp-600"}
  :journal/page-title-format "yyyy-MM-dd"
  :graph/settings {:orphan-pages? true
  :excluded-pages? false}
