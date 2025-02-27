@@ -1,4 +1,5 @@
 - [Module](https://learn.microsoft.com/en-gb/training/modules/introduction-end-analytics-use-microsoft-fabric/)
+- [Badge](https://learn.microsoft.com/api/achievements/share/en-gb/taniomi/UYL58KA3?sharingId=BF42B601A1EE754B)
 - # Introduction
 	- Fabric includes the following services:
 		- Data engineering

@@ -1,4 +1,5 @@
 - [Module](https://learn.microsoft.com/en-gb/training/modules/get-started-lakehouses/)
+- [Badge](https://learn.microsoft.com/api/achievements/share/en-gb/taniomi/4LM6ECCK?sharingId=BF42B601A1EE754B)
 - # Introduction
 	- The foundation of Microsoft Fabric is a **lakehouse**, which is built on top of the **OneLake** scalable storage layer and uses Apache Spark and SQL compute engines for big data processing. A lakehouse is a unified platform that 
 	  combines:
