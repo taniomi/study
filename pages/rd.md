@@ -113,13 +113,13 @@ tags:: [[neuroscience]]
 		  CLOCK: [2025-02-19 Wed 07:39:08]--[2025-02-19 Wed 07:39:20] =>  00:00:12
 		  CLOCK: [2025-02-19 Wed 07:39:22]--[2025-02-19 Wed 07:40:05] =>  00:00:43
 		  :END:
-		- DOING Aula 04 - 093 - Luz, comida e exercício - ajuste seu ciclo circadiano![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-play-list.svg)Video - 44 min![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-lock-lesson.svg)
+		- DONE Aula 04 - 093 - Luz, comida e exercício - ajuste seu ciclo circadiano![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-play-list.svg)Video - 44 min![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-lock-lesson.svg)
 		  :LOGBOOK:
 		  CLOCK: [2025-01-30 Thu 14:10:30]--[2025-01-30 Thu 14:10:31] =>  00:00:01
 		  CLOCK: [2025-02-19 Wed 07:39:12]--[2025-02-19 Wed 07:39:13] =>  00:00:01
 		  CLOCK: [2025-02-19 Wed 07:39:14]--[2025-02-19 Wed 07:39:14] =>  00:00:00
 		  CLOCK: [2025-02-19 Wed 07:39:15]--[2025-02-19 Wed 07:39:15] =>  00:00:00
-		  CLOCK: [2025-02-19 Wed 07:40:16]
+		  CLOCK: [2025-02-19 Wed 07:40:16]--[2025-02-28 Fri 08:22:55] =>  216:42:39
 		  :END:
 		- TODO Aula 05 - 049 - O cérebro de quem dorme mal![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-play-list.svg)Video - 66 min![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-lock-lesson.svg)
 		  :LOGBOOK:
