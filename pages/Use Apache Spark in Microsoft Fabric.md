@@ -47,4 +47,48 @@
 		- Specify Spark configuration properties to override default behavior.
 		- Upload resource files that need to be available in the environment.
 - ## Additional Spark configuration options
+	- Spark pools and environments are the primary configs for Spark processing in a Fabric workspace. Other options for optimizations are:
+- ### Native execution engine
+	- **What?** Vectorized processing engine that runs Spark operation directly ON the lakehouse infrastructure.
+	- **Why?** Improve performance of queries when using large data sets in Parquet or Delta file formats.
+	- **How?** Enable native execution engine on the *environment* or in an *individual notebook*.
+		- Environment configs:
+		  ```
+		  spark.native.enabled: true
+		  spark.shuffle.manager: org.apache.spark.shuffle.sort.ColumnarShuffleManager
+		  ```
+		- Notebook configs at the beginning of code:
+		  ```
+		  %%configure 
+		  { 
+		     "conf": {
+		         "spark.native.enabled": "true", 
+		         "spark.shuffle.manager": "org.apache.spark.shuffle.sort.ColumnarShuffleManager" 
+		     } 
+		  }
+		  ```
+- ### High concurrency mode
+	- **What?** Multiple concurrent users or processes share the same Spark session.
+	- **Why?** Optimize efficiency of Spark resource usage.
+	- **How?** Enable high concurrency mode in *notebooks* or *Spark jobs*.
+		- To enable high concurrency mode, use the **Data Engineering/Science** section of the workspace settings interface.
+- ### Automatic MLFlow logging
+	- **What?** MLFlow is an open source library. Automatic MLFlow logging is a feature that logs important info in ML experiments.
+	- **Why?** It saves the time of doing the work of writing code for logging experiment details (hyperparameters, performance metrics, model architecture, weights, etc.)
+	- **How?** Enabled by default. Disable in wokspace settings.
+- ### Spark administration for a Fabric capacity
+	- Administrators can manage Spark settings at a Fabric capacity level, 
+	  enabling them to restrict and override Spark settings in workspaces 
+	  within an organization.
+- # Run Spark code
+	- Use a *notebook* or define a *Spark job*.
+- ## Notebooks
+	- ![notebook.png](../assets/notebook_1741303965125_0.png)
+- ## Spark job definition
+	- Just like Databricks jobs.
+	- ![spark-job.png](../assets/spark-job_1741303977143_0.png)
+- # Work with data in a Spark dataframe
+	- Natively, Spark uses a data structure called a *resilient distributed dataset* (RDD); but while you *can* write code that works directly with RDDs, the most commonly used data structure for working with structured data in Spark is the *dataframe*, which is provided as part of the *Spark SQL* library.
+	- Dataframes in Spark are similar to those in the ubiquitous *Pandas* Python library, but optimized to work in Spark's distributed processing environment.
+- ## Loading data into a dataframe
 	-
