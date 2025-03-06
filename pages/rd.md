@@ -121,9 +121,10 @@ tags:: [[neuroscience]]
 		  CLOCK: [2025-02-19 Wed 07:39:15]--[2025-02-19 Wed 07:39:15] =>  00:00:00
 		  CLOCK: [2025-02-19 Wed 07:40:16]--[2025-02-28 Fri 08:22:55] =>  216:42:39
 		  :END:
-		- TODO Aula 05 - 049 - O cérebro de quem dorme mal![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-play-list.svg)Video - 66 min![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-lock-lesson.svg)
+		- DOING Aula 05 - 049 - O cérebro de quem dorme mal![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-play-list.svg)Video - 66 min![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-lock-lesson.svg)
 		  :LOGBOOK:
 		  CLOCK: [2025-01-30 Thu 14:10:30]--[2025-01-30 Thu 14:10:31] =>  00:00:01
+		  CLOCK: [2025-03-05 Wed 20:44:37]
 		  :END:
 		- TODO Aula 06 - 104 - O sono de quem trabalha em turnos (e como manejar)![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-play-list.svg)Video - 31 min![](https://ambiente.reservatoriodedopamina.com.br/assets/images/ic-lock-lesson.svg)
 		  :LOGBOOK:
