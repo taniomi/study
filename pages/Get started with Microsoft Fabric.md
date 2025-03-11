@@ -11,9 +11,10 @@ tags:: [[microsoft-learning]], [[data-eng]]
   CLOCK: [2025-02-24 Mon 14:14:55]--[2025-02-24 Mon 14:14:56] =>  00:00:01
   CLOCK: [2025-02-24 Mon 14:14:57]--[2025-02-24 Mon 14:15:05] =>  00:00:08
   :END:
-- DOING [[Use Apache Spark in Microsoft Fabric]] • 1 h 13 min
+- DONE [[Use Apache Spark in Microsoft Fabric]] • 1 h 13 min
   :LOGBOOK:
-  CLOCK: [2025-02-24 Mon 14:15:09]
+  CLOCK: [2025-02-24 Mon 14:15:09]--[2025-03-11 Tue 20:34:54] =>  366:19:45
+  CLOCK: [2025-03-11 Tue 20:34:54]--[2025-03-11 Tue 20:34:55] =>  00:00:01
   :END:
 - TODO [[Work with Delta Lake tables in Microsoft Fabric]] • [Module](https://learn.microsoft.com/en-gb/training/modules/work-delta-lake-tables-fabric/) • 1 h 8 min
 - TODO [[Orchestrate processes and data movement with Microsoft Fabric]] • [Module](https://learn.microsoft.com/en-gb/training/modules/use-data-factory-pipelines-fabric/) • 1 h 22 min
