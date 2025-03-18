@@ -1,0 +1,2 @@
+- Aluno da [[jornada-dados]] que virou instrutor
+- Já fez um "Quem sabe faz ao vivo" com um tema complicado na [[jornada-dados]]

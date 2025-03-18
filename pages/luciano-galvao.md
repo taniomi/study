@@ -1,2 +1,3 @@
 - Luciano Vasconcelos Galvão Filho
+- Fundador da [[jornada-dados]]
 - https://www.linkedin.com/in/lucianovasconcelosf/

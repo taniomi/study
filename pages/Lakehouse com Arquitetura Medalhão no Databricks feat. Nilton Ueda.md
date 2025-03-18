@@ -1,7 +1,8 @@
-tags:: [[data-eng]], [[databricks]], [[jornada-dados]]
+tags:: [[data-eng]], [[etl-elt]] , [[databricks]], [[jornada-dados]], [[live]]
 
 - instructor:: [[luciano-galvao]], [[nilton-ueda]]
 - Link da live[^1]
+  id:: 67ac07a4-3132-4494-a7e4-950ea9a16818
 - O dashboard é a ponta do iceberg e é muito importante ter os **fundamentos**.
   collapsed:: true
 	- ![image.png](../assets/image_1739317661293_0.png)
