@@ -87,4 +87,98 @@
 	  new_rows_df.write.format("delta").mode("append").save(delta_path)
 	  ```
 - # Optimize delta tables
--
+	- **The small file problem:** Spark is parallel-processing framework, and has data stored on one or more nodes. Parquet files are immutable and every update or delete generates a new file. In the end, we can get lots of small files and the queries are slow or fail to complete.
+- ## OptimizeWrite function
+	- **OptimizeWrite:** feature of DeltaLake that write one bigger file instead of multiple smaller ones.
+	- ![optimize-write.png](../assets/optimize-write_1742308447280_0.png)
+- ## Optimize
+	- Table maintenance feature that joins small Parquet files into larger files.
+	- You might run Optimize after loading large tables, resulting in:
+		- fewer larger files
+		- better compression
+		- efficient data distribution across nodes
+	- ![optimize-command.png](../assets/optimize-command_1742308563905_0.png)
+	- To run Optimize:
+		- In **Lakehouse Explorer**, select the ... menu beside a table name and select **Maintenance**.
+		- Select **Run OPTIMIZE command**.
+		- Optionally, select **Apply V-order to maximize reading speeds in Fabric**.
+		- Select **Run now**.
+- ### V-Order function
+	- Option when running *Optimize*.
+	- Enabled by default.
+	- Can increase write time by 15%, but enables way faster reads.
+	- Can reduce network, disk and CPU resources when reading data.
+	- V-Order works by applying special sorting, row group distribution, dictionary encoding, and compression on Parquet files. It's 100% compliant to the open-source Parquet format and all Parquet engines can read it.
+- ## Vacuum
+	- "Vacuum" old data files, keep transaction logs. You get to define a retention period.
+	- To allow time travel, a new Parquet file is created every time there is an update or delete, and an entry is made in the transaction log.
+	- ![how-vacuum-works.png](../assets/how-vacuum-works_1742308922637_0.png)
+	- You can also run **VACUUM** as a SQL command in a notebook:
+	- ```python
+	  %%sql
+	  VACUUM lakehouse2.products RETAIN 168 HOURS;
+	  ```
+	- VACUUM commits to the Delta transaction log, so you can view previous runs in DESCRIBE HISTORY.
+	- ```python
+	  %%sql
+	  DESCRIBE HISTORY lakehouse2.products;
+	  ```
+- ## Partitioning Delta tables
+	- Organize data into partitions. Instead of going through all the data, check a specific relevant partition. Like a persistent `WHERE`.
+	- E.g.: Partition sales data by year. Report on sales data for 2024, check only partition "year=2024". Like a glorified `WHERE`.
+	- Partitions are a fixed data layout and don't adapt to different query patterns. When considering how to use partitioning, think about how your data is used, and its granularity.
+	- Use partitioning when:
+		- You have very large amounts of data.
+		- Tables can be split into a few large partitions.
+	- Don't use partitioning when:
+		- Data volumes are small.
+		- A partitioning column has high cardinality, as this creates a large number of partitions.
+		- A partitioning column would result in multiple levels.
+	- ![partitioning.png](../assets/partitioning_1742309266291_0.png)
+- # Work with delta tables in Spark
+	- Ways to work with delta tables and delta format files.
+- ## Using Spark SQL
+	- [SQL Commands DDL, DML, etc](https://www.geeksforgeeks.org/sql-ddl-dql-dml-dcl-tcl-commands/)
+	- ![new.png](../assets/new_1742309512074_0.png)
+	- In the code itself
+	  ```python
+	  spark.sql("INSERT INTO products VALUES (1, 'Widget', 'Acessories', 2.99)")
+	  ```
+	- In a notebook
+	  ```sql
+	  %%sql
+	  
+	  UPDATE products
+	  SET Price = 2.49 WHERE ProductId = 1;
+	  ```
+- ## Use the Delta API
+	- Use the Delta API to create a DeltaTable from files and then modify the data (like importing a .csv to a df and then saving it back as a .csv).
+	- ```python
+	  from delta.tables import *
+	  from pyspark.sql.functions import *
+	  
+	  # Create a DeltaTable object
+	  delta_path = "Files/mytable"
+	  deltaTable = DeltaTable.forPath(spark, delta_path)
+	  
+	  # Update the table (reduce price of accessories by 10%)
+	  deltaTable.update(
+	      condition = "Category == 'Accessories'",
+	      set = { "Price": "Price * 0.9" })
+	  ```
+- ## Use  *time travel*  to work with table versioning
+	- You can see all the modifications made to a DeltaTable in the table *transaction log*.
+	- See the history of a table
+	  ```sql
+	  %%sql
+	  
+	  DESCRIBE HISTORY products
+	  DESCRIBE HISTORY 'Files/table' # external table
+	  ```
+	- Retrieve data from a specific version with `versionAsOf` or `timestampAsOf`
+	  ```python
+	  df = spark.read.format("delta").option("versionAsOf", 0).load(delta_path)
+	  df = spark.read.format("delta").option("timestampAsOf", '2022-01-01').load(delta_path)
+	  ```
+- # Use delta tables with streaming data
+	-
