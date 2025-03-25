@@ -34,10 +34,11 @@ tags:: [[data-eng]]
 	  :LOGBOOK:
 	  CLOCK: [2024-12-22 Sun 10:30:13]--[2024-12-22 Sun 10:30:44] =>  00:00:31
 	  :END:
-	- TODO [[Aula 04 - Tipos complexos e TypeHint (Dicts vs DataFrames vs Tables vs Excel)]]
+	- DOING [[Aula 04 - Tipos complexos e TypeHint (Dicts vs DataFrames vs Tables vs Excel)]]
 	  :LOGBOOK:
 	  CLOCK: [2024-12-22 Sun 10:33:53]
 	  CLOCK: [2025-02-10 Mon 21:32:25]--[2025-02-10 Mon 21:32:27] =>  00:00:02
+	  CLOCK: [2025-03-25 Tue 19:35:39]
 	  :END:
 	- [GitHub](https://github.com/lvgalvao/data-engineering-roadmap/tree/main/Bootcamp%20-%20Python%20para%20dados)
 - ### Infra, Linux, Docker

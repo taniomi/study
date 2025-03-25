@@ -14,6 +14,7 @@ id:: 675ef002-fbdd-4a53-9160-4553f1db48a7
 	  CLOCK: [2024-12-19 Thu 11:39:38]--[2024-12-19 Thu 11:39:38] =>  00:00:00
 	  CLOCK: [2024-12-22 Sun 10:20:01]--[2024-12-22 Sun 10:29:55] =>  00:09:54
 	  :END:
+- [GitHub](https://github.com/lvgalvao/data-engineering-roadmap/tree/main/Bootcamp%20-%20Python%20para%20dados/aula03)
 - # Abertura
 	- **Controle de Fluxo:** em que ordem as instruções do código vão ser executadas (if, for e while ajudam a indicar qual linha deve ser executada em seguida)
 	- O Airflow é um controlador de fluxo, ele determina quais atividades devem ser executadas e faz a  orquestração dessas atividades. É um scheduler que também tem lógica inbuída nele.

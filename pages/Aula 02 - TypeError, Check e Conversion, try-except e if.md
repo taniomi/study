@@ -1,6 +1,7 @@
 tags:: [[data-eng]], [[jornada-dados]]
 
 - instructor:: [[luciano-galvao]]
+- [GitHub](https://github.com/lvgalvao/data-engineering-roadmap/tree/main/Bootcamp%20-%20Python%20para%20dados/aula02)
 - ## Type Check [^1]
 	- Verificação de tipo (`type check`) é o processo de verificar o tipo de uma variável. Isso pode ser útil para garantir que operações ou funções sejam aplicadas apenas a tipos de dados compatíveis, evitando erros em tempo de execução.
 	- ### Exemplo de Type Check
