@@ -30,4 +30,3 @@ tags:: [[data-eng]], [[etl-elt]], [[jornada-dados]], [[live]]
 	- Estude os modelos de validação de dados na documentação do *pydantic*, lá já deve ter exatamente o que você precisa!
 	- Estrutura básica do projeto
 	  ![image.png](../assets/image_1742836417932_0.png){:height 339, :width 748}
-- [continue here](https://youtu.be/JuOyNPjAer8?t=8887)
