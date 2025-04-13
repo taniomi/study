@@ -15,17 +15,17 @@
 	- **The goal of this module:**
 		- How you can use Spark in Microsoft Fabric to ingest, process, and analyze data in a lakehouse.
 - # Prepare to use Apache Spark
-- Apache is able to process large-scale data by dividing the work across multiple nodes in a cluster (a *Spark pools* in MS Fabric).
+	- Apache is able to process large-scale data by dividing the work across multiple nodes in a cluster (a *Spark pools* in MS Fabric).
 - ## Spark pools
-- *Spark pools* is a fancy name for the nodes of a cluster.
-- The nodes of a cluster are the workers and have tasks divided between them by the head cluster.
-- One cluster is dedicated to managing and distributing tasks and the others are responsible for executing the tasks.
-- A *head* node in a Spark pool coordinates distributed processes through a *driver* program.
-  logseq.order-list-type:: number
-- The pool includes multiple *worker* nodes on which *executor* processes perform the actual data processing tasks.
-  logseq.order-list-type:: number
-- ![Diagram of a Spark pool.](https://learn.microsoft.com/en-gb/training/wwl/use-apache-spark-work-files-lakehouse/media/spark-pool.png)
-- ![image-1-803603373.png](../assets/image-1-803603373_1740685791728_0.png)
+	- *Spark pools* is a fancy name for the nodes of a cluster.
+	- The nodes of a cluster are the workers and have tasks divided between them by the head cluster.
+	- One cluster is dedicated to managing and distributing tasks and the others are responsible for executing the tasks.
+	- A *head* node in a Spark pool coordinates distributed processes through a *driver* program.
+	  logseq.order-list-type:: number
+	- The pool includes multiple *worker* nodes on which *executor* processes perform the actual data processing tasks.
+	  logseq.order-list-type:: number
+	- ![Diagram of a Spark pool.](https://learn.microsoft.com/en-gb/training/wwl/use-apache-spark-work-files-lakehouse/media/spark-pool.png)
+	- ![image-1-803603373.png](../assets/image-1-803603373_1740685791728_0.png)
 - ### Spark pools in Microsoft Fabric
 	- Specific configuration settings for Spark pools include:
 	- **Node Family**: The type of virtual machines used for the Spark cluster nodes. In most cases, *memory optimized* nodes provide optimal performance.
