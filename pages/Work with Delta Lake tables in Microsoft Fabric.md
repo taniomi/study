@@ -181,4 +181,61 @@
 	  df = spark.read.format("delta").option("timestampAsOf", '2022-01-01').load(delta_path)
 	  ```
 - # Use delta tables with streaming data
+	- Up until now, we viewed *static data* in files. Spark processes **streaming** and **batch** data through the same API.
+- ## Spark Structured Streaming
+	- Typical streaming solution:
+		- Read data from a **source** constantly
+		- Process data to perform some transformations, aggregations, filter fields, etc. (optional)
+		- Write data to a **sink**
+	- Spark Structured Streaming is a Spark API that deals with streaming data.
+	- The Spark Structured Streaming Dataframe is a boundless dataframe that receives data continuously from directory paths, Kafka, network ports and other sources.
+- ## Streaming with Delta tables
+	- Delta tables can be both sources or sinks of streaming data.
+	- E.g.: store IoT data from a sensor to a Delta table (sink), and then read that Delta to feed another application (source), or query the table (source).
+- ### Using a Delta table as a streaming source
+	- In the following PySpark example, a Delta table is created to store details of Internet sales orders:
+	  ```sql
+	  %%sql
+	  CREATE TABLE orders_in
+	  (
+	          OrderID INT,
+	          OrderDate DATE,
+	          Customer STRING,
+	          Product STRING,
+	          Quantity INT,
+	          Price DECIMAL
+	  )
+	  USING DELTA;
+	  ```
+	- A hypothetical data stream of internet orders is inserted into the orders_in table:
+	  ```sql
+	  %%sql
+	  INSERT INTO orders_in (OrderID, OrderDate, Customer, Product, Quantity, Price)
+	  VALUES
+	      (3001, '2024-09-01', 'Yang', 'Road Bike Red', 1, 1200),
+	      (3002, '2024-09-01', 'Carlson', 'Mountain Bike Silver', 1, 1500),
+	      (3003, '2024-09-02', 'Wilson', 'Road Bike Yellow', 2, 1350),
+	      (3004, '2024-09-02', 'Yang', 'Road Front Wheel', 1, 115),
+	      (3005, '2024-09-02', 'Rai', 'Mountain Bike Black', 1, NULL);
+	  ```
+	- To verify, you can read and display data from the input table:
+	  ```python
+	  # Read and display the input table
+	  df = spark.read.format("delta").table("orders_in")
+	  
+	  display(df)
+	  ```
+	- The data is then loaded into a streaming DataFrame from the Delta table:
+	  ```python
+	  # Load a streaming DataFrame from the Delta table
+	  stream_df = spark.readStream.format("delta") \
+	      .option("ignoreChanges", "true") \
+	      .table("orders_in")
+	  ```
+	- > When using a Delta table as a streaming source, only *append* operations can be included in the stream. Data modifications can cause an error unless you specify the `ignoreChanges` or `ignoreDeletes` option.
+	- You can check that the stream is streaming by using the `isStreaming` property which should return True:
+	  ```python
+	  # Verify that the stream is streaming
+	  stream_df.isStreaming
+	  ```
 	-
