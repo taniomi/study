@@ -1,4 +1,6 @@
-# Introduction
+- [Module](https://learn.microsoft.com/en-gb/training/modules/work-delta-lake-tables-fabric/)
+- [Badge](https://learn.microsoft.com/api/achievements/share/en-gb/taniomi/A4VXF427?sharingId=BF42B601A1EE754B)
+- # Introduction
 	- Tables in MS Fabric actually use a Linux table format called *Delta Lake*.
 	- This format allows for storing batch and streaming data and is commonly used with Apache Spark, so storing data in *Delta Lake* format tables allows for queries in Spark.
 	- Basically, we can use Apache to perform SQL - like a relational database - and we can also have flexibility in storage - like a data lake.
@@ -34,8 +36,9 @@
 	- ```python
 	  df.write.format("delta").saveAsTable("myexternaltable", path="Files/myexternaltable")
 	  ```
-	- With an *external* table, the metadata is stored in the **Tables** , just as with a *managed* table, but the Parquet data files and JSON log files are stored in the external path (and will be shown in that external path node in the Lakehouse explorer pane - a map?).
+	- With an *external* table, the metadata is stored in the **Tables**, just as with a *managed* table, but the Parquet data files and JSON log files are stored in the external path (and will be shown in that external path node in the Lakehouse explorer pane - a map?).
 	- Deleting an external table from the lakehouse metastore <u>doesn't delete</u> the associated data files.
+	- Deleting a managed table from the lakehouse metastore <u>deletes</u> the associated data files.
 - ## Creating table metadata
 	- Instead of creating a table from existing data, define the table in the metastore and then populate it with data later.
 - ### Use the *DeltaTableBuilder* API
@@ -238,4 +241,39 @@
 	  # Verify that the stream is streaming
 	  stream_df.isStreaming
 	  ```
-	-
+- ### Transform the data stream
+	- Using the Spark Structured Streaming API, we can transform data in a streaming fashion and have a near-real-time visualization.
+	- In this example, any rows with NULL in the Price column are filtered and new columns are added for IsBike and Total.
+	  ```python
+	  from pyspark.sql.functions import col, expr
+	  
+	  transformed_df = stream_df.filter(col("Price").isNotNull()) \
+	      .withColumn('IsBike', expr("INSTR(Product, 'Bike') > 0").cast('int')) \
+	      .withColumn('Total', expr("Quantity * Price").cast('decimal'))
+	  ```
+- ### Using a Delta table as a streaming sink
+	- ```python
+	  # Write the stream to a delta table
+	  output_table_path = 'Tables/orders_processed'
+	  checkpointpath = 'Files/delta/checkpoint'
+	  deltastream = transformed_df.writeStream.format("delta").option("checkpointLocation", checkpointpath).start(output_table_path)
+	  
+	  print("Streaming to orders_processed...")
+	  ```
+	- > The `checkpointLocation` option is used to write a checkpoint file that tracks the state of the stream processing. This file enables you to recover from failure at the point where stream processing left off.
+	- While the streaming is happening, we can query the Delta Lake table to see the output data.
+	  ```sql
+	  %%sql
+	  SELECT *
+	      FROM orders_processed
+	      ORDER BY OrderID;
+	  ```
+	- The desired results should exclude order 3005 because of the NULL in column Price and the two new columns added in the transformation should appear (IsBike and Total).
+	  ![image.png](../assets/image_1746704070603_0.png)
+	- When finished, stop the streaming data to avoid unnecessary processing costs using the stop method:
+	  ```python
+	  # Stop the streaming data to avoid excessive processing costs
+	  deltastream.stop()
+	  ```
+- # Exercise - Use delta tables in Apache Spark
+	- [Launch Exercise](https://go.microsoft.com/fwlink/?linkid=2259245)

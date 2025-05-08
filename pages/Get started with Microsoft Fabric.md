@@ -16,8 +16,14 @@ tags:: [[microsoft-learning]], [[data-eng]]
   CLOCK: [2025-02-24 Mon 14:15:09]--[2025-03-11 Tue 20:34:54] =>  366:19:45
   CLOCK: [2025-03-11 Tue 20:34:54]--[2025-03-11 Tue 20:34:55] =>  00:00:01
   :END:
-- TODO [[Work with Delta Lake tables in Microsoft Fabric]] • [Module](https://learn.microsoft.com/en-gb/training/modules/work-delta-lake-tables-fabric/) • 1 h 8 min
-- TODO [[Orchestrate processes and data movement with Microsoft Fabric]] • [Module](https://learn.microsoft.com/en-gb/training/modules/use-data-factory-pipelines-fabric/) • 1 h 22 min
+- DONE [[Work with Delta Lake tables in Microsoft Fabric]] • [Module](https://learn.microsoft.com/en-gb/training/modules/work-delta-lake-tables-fabric/) • 1 h 8 min
+  :LOGBOOK:
+  CLOCK: [2025-05-08 Thu 08:50:31]--[2025-05-08 Thu 08:50:37] =>  00:00:06
+  :END:
+- DOING [[Orchestrate processes and data movement with Microsoft Fabric]] • [Module](https://learn.microsoft.com/en-gb/training/modules/use-data-factory-pipelines-fabric/) • 1 h 22 min
+  :LOGBOOK:
+  CLOCK: [2025-05-08 Thu 08:50:56]
+  :END:
 - TODO [[Ingest Data with Dataflows Gen2 in Microsoft Fabric]] • [Module](https://learn.microsoft.com/en-gb/training/modules/use-dataflow-gen-2-fabric/) • 53 min
 - TODO [[Get started with data warehouses in Microsoft Fabric]] • [Module](https://learn.microsoft.com/en-gb/training/modules/get-started-data-warehouse/) • 1 h 6 min
 - TODO [[Get started with Real-Time Intelligence in Microsoft Fabric]] • [Module](https://learn.microsoft.com/en-gb/training/modules/get-started-kusto-fabric/) • 1 h 42 min
