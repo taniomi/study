@@ -1,10 +1,12 @@
 - [Module](https://learn.microsoft.com/en-gb/training/modules/work-delta-lake-tables-fabric/)
 - [Badge](https://learn.microsoft.com/api/achievements/share/en-gb/taniomi/A4VXF427?sharingId=BF42B601A1EE754B)
 - # Introduction
+  collapsed:: true
 	- Tables in MS Fabric actually use a Linux table format called *Delta Lake*.
 	- This format allows for storing batch and streaming data and is commonly used with Apache Spark, so storing data in *Delta Lake* format tables allows for queries in Spark.
 	- Basically, we can use Apache to perform SQL - like a relational database - and we can also have flexibility in storage - like a data lake.
 - # Understand Delta Lake
+  collapsed:: true
 	- *Delta Lake* is an open-source storage layer that adds relational database semantics to Spark-based data lake processing.
 	- Tables in Microsoft Fabric lakehouses are Delta tables, which is signified by the triangular Delta (**Δ**) icon on tables in the lakehouse user interface.
 	- Delta tables are schema abstractions over data files that are stored in Delta format. For each table, the lakehouse stores a folder containing *Parquet* data files and a **_delta_Log** folder in which transaction details are logged in JSON format.
@@ -18,6 +20,7 @@
 		- **Standard formats and interoperability**. The underlying data for Delta tables is stored in Parquet format, which is commonly used in data lake ingestion pipelines. Additionally, you can use the SQL analytics endpoint for the Microsoft Fabric lakehouse to query Delta tables in SQL.
 - # Create delta tables
 - ## Creating a delta table from a dataframe
+  collapsed:: true
 	- id:: 67d4587f-c1f9-405a-a5ca-85c96e9df012
 	  ```python
 	  # Load a file into a dataframe
@@ -29,6 +32,7 @@
 	- The data for the table is saved in Parquet files (regardless of the format of the source file you loaded into the dataframe) in the **Tables** storage area in the lakehouse, along with a **_delta_log** folder containing the transaction logs for the table (that allows data versioning and time travel).
 	- The table is listed in the **Tables** folder for the lakehouse in the **Data explorer** pane.
 - ## *Managed*  vs  *external*  tables
+  collapsed:: true
 	- The example [above](((67d4587f-c1f9-405a-a5ca-85c96e9df012))) saves a *managed* table.
 	- Being a *managed* table means that the Spark runtime will take care of the metadata and the data files. This also means that deleting the table will delete the files from the storage **Tables** in the lakehouse.
 	- With an *external* table, the metadata, the relational table definition, will be mapped to another file storage.
@@ -40,8 +44,10 @@
 	- Deleting an external table from the lakehouse metastore <u>doesn't delete</u> the associated data files.
 	- Deleting a managed table from the lakehouse metastore <u>deletes</u> the associated data files.
 - ## Creating table metadata
+  collapsed:: true
 	- Instead of creating a table from existing data, define the table in the metastore and then populate it with data later.
 - ### Use the *DeltaTableBuilder* API
+  collapsed:: true
 	- Use PySpark to create a table with specified name and columns.
 	- ```python
 	  from delta.tables import *
@@ -55,6 +61,7 @@
 	    .execute()
 	  ```
 - ### Use Spark SQL
+  collapsed:: true
 	- Use Spark SQL DDL (Data Definition Language).
 	- ```sql
 	  %%sql
