@@ -7,6 +7,11 @@ tags:: [[git]]
 	  git filter-repo --invert-paths --path <path to the file or directory>
 	  ```
 	- Multiple paths can be specified by using multiple `--path` parameters. You can find detailed documentation here: [https://www.mankier.com/1/git-filter-repo](https://www.mankier.com/1/git-filter-repo)
+	-
+	- [Removing paths with a certain extension](https://github.com/newren/git-filter-repo/blob/main/Documentation/examples-from-user-filed-issues.md#Removing-paths-with-a-certain-extension)
+	  ```bash
+	  git filter-repo --invert-paths --path-glob '*.xsa'
+	  ```
 - Add the remote origin again
   logseq.order-list-type:: number
 	- ```bash
@@ -16,4 +21,3 @@ tags:: [[git]]
   logseq.order-list-type:: number
 - Tell your collaborators to rebase `git pull --rebase`.
   logseq.order-list-type:: number
-- logseq.order-list-type:: number
