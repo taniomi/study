@@ -1,4 +1,4 @@
-tags:: docs
+tags:: [[docs]]
 
 - ```markdown
   $project

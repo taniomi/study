@@ -1,4 +1,4 @@
-tags:: docs
+tags:: [[docs]]
 
 - *Here are notes I took from reading a bunch of articles on documentation.*
 - {{renderer :toc_6706c182-f4fe-4cd2-aa60-57bc00a9de5f}}
