@@ -1,5 +1,5 @@
 - [Module](https://learn.microsoft.com/en-gb/training/modules/use-data-factory-pipelines-fabric/)
-- [Badge]()
+- [Badge](https://learn.microsoft.com/api/achievements/share/en-gb/taniomi/E5LWMTRP?sharingId=BF42B601A1EE754B)
 - ## Learning objectives
 	- In this module, you learn how to:
 		- Describe pipeline capabilities in Microsoft Fabric.
@@ -34,8 +34,5 @@
 	- Pretty much just like ADF.
 	- ![copy-data-activity.png](../assets/copy-data-activity_1746994032582_0.png)
 - ## When to use the Copy Data activity
-  collapsed:: true
-	- Use it to copy data directly between a supported source and destination without applying any transformations, or when you want to import the raw data and apply transformations in later pipeline activities (ELT).
+	- You want to copy data directly between a supported source and destination without applying any transformations, or when you want to import the raw data and apply transformations in later pipeline activities (ELT).
 	- If you need to apply transformations to the data as it is ingested, or merge data from multiple sources, consider using a **Data Flow** activity to run a dataflow (Gen2). You can use the Power Query user interface to define a dataflow (Gen2) that includes multiple transformation steps, and include it in a pipeline.
-- # Use pipeline templates
-	-

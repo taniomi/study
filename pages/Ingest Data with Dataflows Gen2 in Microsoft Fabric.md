@@ -1,0 +1,9 @@
+- [Module](https://learn.microsoft.com/en-gb/training/modules/use-dataflow-gen-2-fabric/)
+- [Badge]()
+- ## Learning objectives
+	- In this module, you'll learn how to:
+		- Describe Dataflow capabilities in Microsoft Fabric
+		- Create Dataflow solutions to ingest and transform data
+		- Include a Dataflow in a pipeline
+- # Introduction
+	-
