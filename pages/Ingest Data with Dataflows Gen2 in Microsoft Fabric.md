@@ -1,9 +1,33 @@
 - [Module](https://learn.microsoft.com/en-gb/training/modules/use-dataflow-gen-2-fabric/)
-- [Badge]()
+- [Badge](https://learn.microsoft.com/api/achievements/share/en-us/taniomi/BCUPXGUD?sharingId=BF42B601A1EE754B`)
 - ## Learning objectives
 	- In this module, you'll learn how to:
 		- Describe Dataflow capabilities in Microsoft Fabric
 		- Create Dataflow solutions to ingest and transform data
 		- Include a Dataflow in a pipeline
 - # Introduction
-	-
+	- Dataflows Gen2 are used to ingest and transform data from multiple sources, and then land the cleansed data to another destination. They can be incorporated into data pipelines for more complex activity orchestration, and also used as a data source in Power BI.
+- # Understand Dataflows Gen2 in Microsoft Fabric
+- ## What is a dataflow?
+	- *Dataflows* is a cloud-based tool that can perform data transformations.
+	- Fundamentally, a dataflow includes all of the transformations to reduce data prep time and then can be loaded into a new table, included in a data pipeline, or used as a data source by data analysts.
+- ## How to use Dataflows Gen2
+	- Goal of Dataflows Gen2 is to perform ETL using ==Power Query Online==. (oh no)
+	- If you only choose to use a data pipeline, you copy data, then use your preferred coding language to extract, transform, and load the data. Alternatively, you can create a Dataflow Gen2 first to extract and transform the data. You can also load the data into a lakehouse, and other destinations. Now the business can easily consume the curated semantic model.
+	- > [NOTE]
+	  > It looks like a semantic model is simply the group of transformations applied to data.
+	- > Make your dataflow discoverable so data analysts can also connect to the dataflow through Power BI Desktop. This reduces the data preparation for report development.
+- ## Benefits and limitations
+	- Benefits:
+		- Extend data with consistent data, such as a standard date dimension table.
+		- Allow self-service users access to a subset of data warehouse separately.
+		- Optimize performance with dataflows, which enable extracting data once for reuse, reducing data refresh time for slower sources.
+		- Simplify data source complexity by only exposing dataflows to larger analyst groups.
+		- Ensure consistency and quality of data by enabling users to clean and transform data before loading it to a destination.
+		- Simplify data integration by providing a low-code interface that ingests data from various sources.
+	- Limitations:
+		- Dataflows aren't a replacement for a data warehouse.
+		- Row-level security isn't supported.
+		- Fabric capacity workspace is required.
+- # Integrate Dataflows Gen2 and Pipelines in Microsoft Fabric
+	- Basically, Dataflows Gen2 can be a set of tasks bundled together and included in a pipeline as a step of the workflow.

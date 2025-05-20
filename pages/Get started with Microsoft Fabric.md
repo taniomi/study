@@ -25,11 +25,14 @@ tags:: [[microsoft-learning]], [[data-eng]]
   CLOCK: [2025-05-08 Thu 08:50:56]--[2025-05-16 Fri 12:21:57] =>  195:31:01
   CLOCK: [2025-05-16 Fri 12:21:58]--[2025-05-16 Fri 12:22:00] =>  00:00:02
   :END:
-- DOING [[Ingest Data with Dataflows Gen2 in Microsoft Fabric]] • [Module](https://learn.microsoft.com/en-gb/training/modules/use-dataflow-gen-2-fabric/) • 53 min
+- DONE [[Ingest Data with Dataflows Gen2 in Microsoft Fabric]] • [Module](https://learn.microsoft.com/en-gb/training/modules/use-dataflow-gen-2-fabric/) • 53 min
   :LOGBOOK:
-  CLOCK: [2025-05-16 Fri 12:22:04]
+  CLOCK: [2025-05-16 Fri 12:22:04]--[2025-05-20 Tue 09:29:47] =>  93:07:43
   :END:
-- TODO [[Get started with data warehouses in Microsoft Fabric]] • [Module](https://learn.microsoft.com/en-gb/training/modules/get-started-data-warehouse/) • 1 h 6 min
+- DOING [[Get started with data warehouses in Microsoft Fabric]] • [Module](https://learn.microsoft.com/en-gb/training/modules/get-started-data-warehouse/) • 1 h 6 min
+  :LOGBOOK:
+  CLOCK: [2025-05-20 Tue 09:29:48]
+  :END:
 - TODO [[Get started with Real-Time Intelligence in Microsoft Fabric]] • [Module](https://learn.microsoft.com/en-gb/training/modules/get-started-kusto-fabric/) • 1 h 42 min
 - TODO [[Get started with data science in Microsoft Fabric]] • [Module](https://learn.microsoft.com/en-gb/training/modules/get-started-data-science-fabric/) • 46 min
 - TODO [[Administer a Microsoft Fabric environment]] • [Module](https://learn.microsoft.com/en-gb/training/modules/administer-fabric/) • 34 min
