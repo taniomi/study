@@ -37,4 +37,18 @@
 		- An *alternate key* is often a natural or business key that identifies a specific instance of an entity in the transactional source system - such as a product code or a customer ID.
 		- You need both surrogate and alternate keys in a data warehouse, because they serve different purposes. Surrogate keys are specific to the data warehouse and help to maintain consistency and accuracy in the data. Alternate keys on the other hand are specific to the source system and help to maintain traceability between the data warehouse and the source system.
 - ### Data warehouse schema designs
+	- In a data warehouse, the data is generally *de-normalized* to reduce the number of joins required to query the data.
+	- In most transactional databases, data is *normalized* to reduce duplication.
+	- **Star schema:** from a fact table, dimension tables are created "around" it.
+	  ![star-schema.png](../assets/star-schema_1747842331107_0.png)
+	- **Snowflake schema:** a star schema, but dimension tables can have relationships between each other and be derived from each other.
+	  ![snowflake-schema.png](../assets/snowflake-schema_1747842462605_0.png)
+	- In this case, the **DimProduct** table has been split up (normalized) to create separate dimension tables for product categories and suppliers.
+		- Each row in the **DimProduct** table contains key values for the corresponding rows in the **DimCategory** and **DimSupplier tables**.
+	- A **DimGeography** table has been added containing information on where customers and stores are located.
+		- Each row in the **DimCustomer** and **DimStore** tables contains a key value for the corresponding row in the **DimGeography** table.
+- # Understand data warehouses in Fabric
+	- Fabric's Lakehouse is a collection of files, folders, tables, and shortcuts that act **like a database over a data lake**. It's used by the Spark engine and SQL engine for big data processing and has features for ACID transactions when using the open-source Delta formatted tables.
+	- Fabric's data warehouse experience allows you to transition from the **lake view of the Lakehouse (which supports data engineering and Apache Spark)** to the **SQL experiences that a traditional data warehouse would provide**. The Lakehouse gives you the ability to read tables and use the SQL analytics endpoint, whereas the data warehouse enables you to manipulate the data.
+	- In the data warehouse experience, you'll model data using tables and views, run T-SQL to query data across the data warehouse and Lakehouse, use T-SQL to perform DML operations on data inside the data warehouse, and serve reporting layers like Power BI.
 	-
