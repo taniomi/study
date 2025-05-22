@@ -1,3 +1,6 @@
+- [Module](https://learn.microsoft.com/en-us/training/modules/get-started-data-warehouse/)
+- [Badge]()
+- ---
 - **Data warehouses** are *analytical stores* built on a *relational schema* to *support SQL queries*.
 - Microsoft Fabric enables you to create a relational data warehouse in your workspace and integrate it easily with other elements of your end-to-end analytics solution.
 - ## Learning objectives
@@ -51,4 +54,90 @@
 	- Fabric's Lakehouse is a collection of files, folders, tables, and shortcuts that act **like a database over a data lake**. It's used by the Spark engine and SQL engine for big data processing and has features for ACID transactions when using the open-source Delta formatted tables.
 	- Fabric's data warehouse experience allows you to transition from the **lake view of the Lakehouse (which supports data engineering and Apache Spark)** to the **SQL experiences that a traditional data warehouse would provide**. The Lakehouse gives you the ability to read tables and use the SQL analytics endpoint, whereas the data warehouse enables you to manipulate the data.
 	- In the data warehouse experience, you'll model data using tables and views, run T-SQL to query data across the data warehouse and Lakehouse, use T-SQL to perform DML operations on data inside the data warehouse, and serve reporting layers like Power BI.
+- ## Ingest data into your data warehouse
+- ### Table considerations
+	- *Staging tables* are temporary and can be used for cleaning, transforming and validating the data before inserting the data into a created table in the data warehouse. They can also be used for loading data from multiple sources to a single sink table.
+	- Generally, you should implement a data warehouse load process that performs tasks in the following order:
+		- Ingest the new data to be loaded into a data lake, applying pre-load cleansing or transformations as required.
+		  logseq.order-list-type:: number
+		- Load the data from files into staging tables in the relational data warehouse.
+		  logseq.order-list-type:: number
+		- Load the dimension tables from the dimension data in the staging 
+		  logseq.order-list-type:: number
+		  tables, updating existing rows or inserting new rows and generating 
+		  surrogate key values as necessary.
+		- Load the fact tables from the fact data in the staging tables, looking up the appropriate surrogate keys for related dimensions.
+		  logseq.order-list-type:: number
+		- Perform post-load optimization by updating indexes and table distribution statistics.
+		  logseq.order-list-type:: number
+	- *Cross-database querying* can be used to query data from a lakehouse into a Fabric data warehouse, without copying the data.
+	  id:: 682f493d-bf8e-45b5-a140-e85d68991113
+- # Query and transform data
+	- Let's prepare the data for analytics.
+	- Two ways to query data from the data warehouse:
+		- Visual query editor
+		  ![visual-query.png](../assets/visual-query_1747929643362_0.png)
+		- SQL query editor (T-SQL)
+		  ![create-view.png](../assets/create-view_1747929650290_0.png)
+- # Prepare data for analysis and reporting
+	- A *semantic model* defines the **relationships** between the tables in the model, the **measures or calculations** used to understand the data and how the data is aggregated and summarized.
+	- The *semantic model* is then used to create reports in Power BI.
+	- In Fabric, there are three views very similar to Power BI.
+		- **Data** view: shows the tables in the semantic model
+		- **Query** view: shows the SQL queries that are used to create the semantic model
+		- **Model** view: shows the semantic model.
+- ### Build relationships
+	- ![create-relationships.png](../assets/create-relationships_1747929952693_0.png)
+	- ### Create measures
+		- Use Data Analysis Expressions (DAX)
+		- ![create-measure.png](../assets/create-measure_1747929965751_0.png)
+- ## Understand the default semantic model
+	- It is created automatically.
+	- It inherits business logic from the parent lakehouse or warehouse.
+	- New tables in the Lakehouse are added automatically to the default semantic model.
+- # Secure and monitor your data warehouse
+- ## Security
+	- Security features provided by Fabric to the data warehouse:
+		- Role-based access control (RBAC) to control access to the warehouse and its data.
+		- TLS encryption to secure the communication between the warehouse and the client applications.
+		- Azure Storage Service Encryption to protect the data in transit and at rest.
+		- Azure Monitor and Azure Log Analytics to monitor the warehouse activity and audit the access to the data.
+		- Multifactor authentication (MFA) to add an extra layer of security to user accounts.
+		- Microsoft Entra ID integration to manage the user identities and access to the warehouse.
+- ### Workspace permissions
+	- In Fabric, data is organized into workspaces. Users can have assigned roles in the workspace.
+- ### Item permissions
+	- Users can be granted permission to access a specific data warehouse, instead of all the warehouses in a given workspace.
+	- Grant permissions through T-SQL or Fabric portal.
+	- Some permissions:
+		- Read: Allows the user to CONNECT using the SQL connection string.
+		- ReadData: Allows the user to read data from any table/view within the warehouse.
+		- ReadAll: Allows user to read data the raw parquet files in OneLake that can be consumed by Spark.
+	- A user connection to the SQL analytics endpoint will fail without Read permission at a minimum.
+- ## Monitoring
+	- Use *dynamic management views* (DMVs) to monitor connection, session, and request status to see live SQL query lifecycle insights. With DMVs, you can get details like the number of active queries and identify which queries are running for an extended period and require termination.
+	- DMVs available to use in Fabric:
+		- `sys.dm_exec_connections`: Returns information about each connection established between the warehouse and the engine.
+		- `sys.dm_exec_sessions`: Returns information about each session authenticated between the item and engine.
+		- `sys.dm_exec_requests`: Returns information about each active request in a session.
+- ### Query monitoring
+	- To identify queries running for a long time, use `sys.dm_exec_requests`.
+	  ```sql
+	  SELECT request_id, session_id, start_time, total_elapsed_time
+	  FROM sys.dm_exec_requests
+	  WHERE status = 'running'
+	  ORDER BY total_elapsed_time DESC;
+	  ```
+	- Which user ran the session with the long-running query?
+	  ```sql
+	  SELECT login_name
+	      FROM sys.dm_exec_sessions
+	      WHERE session_id = 'SESSION_ID WITH LONG-RUNNING QUERY';
+	  ```
+	- Terminate the session with the long-running query:
+	  ```sql
+	  KILL 'SESSION_ID WITH LONG-RUNNING QUERY';
+	  ```
+	- > [!IMPORTANT]
+	  > You need to be a workspace Admin to run the `KILL` command. Workspace Admins can execute all three DMVs. Member, Contributor, and Viewer roles can see their own results within the warehouse, but cannot see other users' results.
 	-
