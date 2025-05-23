@@ -1,5 +1,5 @@
 - [Module](https://learn.microsoft.com/en-us/training/modules/get-started-data-warehouse/)
-- [Badge]()
+- [Badge](https://learn.microsoft.com/api/achievements/share/en-us/taniomi/BC3ZZ78D?sharingId=BF42B601A1EE754B)
 - ---
 - **Data warehouses** are *analytical stores* built on a *relational schema* to *support SQL queries*.
 - Microsoft Fabric enables you to create a relational data warehouse in your workspace and integrate it easily with other elements of your end-to-end analytics solution.
@@ -43,9 +43,14 @@
 	- In a data warehouse, the data is generally *de-normalized* to reduce the number of joins required to query the data.
 	- In most transactional databases, data is *normalized* to reduce duplication.
 	- **Star schema:** from a fact table, dimension tables are created "around" it.
-	  ![star-schema.png](../assets/star-schema_1747842331107_0.png)
+		- Star is straightforward and optimized for query performance. It minimizes the number of joins to query data.
+		- Particularly effective for analytical queries that require filtering and grouping.
+		- ![star-schema.png](../assets/star-schema_1747842331107_0.png)
 	- **Snowflake schema:** a star schema, but dimension tables can have relationships between each other and be derived from each other.
-	  ![snowflake-schema.png](../assets/snowflake-schema_1747842462605_0.png)
+		- More normalized than the star schema (it has more dimension tables).
+		- Reduces redundancy and saves storage space.
+		- More normalization means more complex queries and potentially slower performance due to increased number of joins when performing a query.
+		- ![snowflake-schema.png](../assets/snowflake-schema_1747842462605_0.png)
 	- In this case, the **DimProduct** table has been split up (normalized) to create separate dimension tables for product categories and suppliers.
 		- Each row in the **DimProduct** table contains key values for the corresponding rows in the **DimCategory** and **DimSupplier tables**.
 	- A **DimGeography** table has been added containing information on where customers and stores are located.
