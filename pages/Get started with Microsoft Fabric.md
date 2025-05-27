@@ -33,9 +33,12 @@ tags:: [[microsoft-learning]], [[data-eng]]
   :LOGBOOK:
   CLOCK: [2025-05-20 Tue 09:29:48]--[2025-05-23 Fri 09:47:37] =>  72:17:49
   :END:
-- DOING [[Get started with Real-Time Intelligence in Microsoft Fabric]] • [Module](https://learn.microsoft.com/en-gb/training/modules/get-started-kusto-fabric/) • 1 h 42 min
+- DONE [[Get started with Real-Time Intelligence in Microsoft Fabric]] • [Module](https://learn.microsoft.com/en-gb/training/modules/get-started-kusto-fabric/) • 1 h 42 min
   :LOGBOOK:
-  CLOCK: [2025-05-23 Fri 09:47:44]
+  CLOCK: [2025-05-23 Fri 09:47:44]--[2025-05-27 Tue 10:28:27] =>  96:40:43
   :END:
-- TODO [[Get started with data science in Microsoft Fabric]] • [Module](https://learn.microsoft.com/en-gb/training/modules/get-started-data-science-fabric/) • 46 min
+- DOING [[Get started with data science in Microsoft Fabric]] • [Module](https://learn.microsoft.com/en-gb/training/modules/get-started-data-science-fabric/) • 46 min
+  :LOGBOOK:
+  CLOCK: [2025-05-27 Tue 10:28:28]
+  :END:
 - TODO [[Administer a Microsoft Fabric environment]] • [Module](https://learn.microsoft.com/en-gb/training/modules/administer-fabric/) • 34 min

@@ -1,5 +1,5 @@
 - [Module](https://learn.microsoft.com/en-us/training/modules/get-started-kusto-fabric/)
-- [Badge]()
+- [Badge](https://learn.microsoft.com/api/achievements/share/en-us/taniomi/9YZMX96U?sharingId=BF42B601A1EE754B)
 - ## Learning Objectives
 	- Understanding core concepts related to real-time data analytics.
 	- Understanding  Microsoft Fabric's Real-Time Intelligence capabilities.
@@ -102,4 +102,37 @@
 - ### Using Copilot to help with queries
 	- Microsoft Fabric includes Copilot for Real-Time Intelligence.
 - # Visualize real-time data
-	-
+	- A dashboard with real-time data, that uses KQL queries instead of SQL. Good for monitoring in manufacturing, like Brose.
+- ## Creating a real-time dashboard
+	- Create a real-time dashboard and then configure the source, or create one directly by querying (with KQL) data in an eventhouse (database of real-time data).
+- ## Visualizing real-time data with Power BI
+	- Real-time Power BI dashboards are available as well.
+- # Automate actions
+	- *Activator*: process events that trigger actions automatically.
+	- With *Activator*, you can:
+		- Send e-mail notifications when a value deviates from a threshold
+		- Run a notebook to perform data processing with Spark when a dashboard is updated
+- ## Understand Activator key concepts
+	- The four core concepts of Activator:
+		- **Events** - Each record in a stream of data represents an *event* that has occurred at a specific point in time.
+		- **Objects** - The data in an event record can be used to represent an *object*, such as a sales order, a sensor, or some other business entity.
+		- **Properties** - The fields in the event data can be mapped to *properties* of the business object, representing some aspect of its state. For example, a *total_amount* field might represent a sales order total, or a *temperature* field might represent the temperature measured by an environmental sensor.
+		- **Rules** - The key to using Activator to automate actions based on events is to define *rules* that set conditions under which an action is triggered based on the property values of objects referenced in events. For example, you might 
+		  define a rule that sends an email to a maintenance manager if the temperature measured by a sensor exceeds a specific threshold.
+	- > **Objects VS Properties**
+	  >
+	  > An Object can have many Properties. E.g.:
+	  > Object: Sales Order
+	  > Properties: OrderId, TotalPrice, CustomerId, ProductId, etc.
+- ## Use cases for Activator
+	- Manage inventory dynamically.
+	- Calculate optimal resource allocation in cloud environments.
+	  id:: 6835bb8a-2897-47da-9c3a-fcd8aff3afca
+	- Initiate marketing actions when product sales drop.
+	- Send notifications when temperature changes could affect perishable goods.
+	- Flag real-time issues affecting the user experience on apps and websites.
+	- Trigger alerts when a shipment hasn't been updated within an expected time frame.
+	- Send alerts when a customer's account balance crosses a certain threshold.
+	- Respond to anomalies or failures in data processing workflows immediately.
+	- Run ads when same-store sales decline.
+	- Alert store managers to move food from failing grocery store freezers before it spoils.
