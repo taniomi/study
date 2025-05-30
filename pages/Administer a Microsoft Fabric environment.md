@@ -1,0 +1,11 @@
+- [Module](https://learn.microsoft.com/en-us/training/modules/administer-fabric/)
+- [Badge]()
+- ---
+- Microsoft Fabric is a SaaS solution for end-to-end data analytics. As an administrator, you can configure features and manage access to suit your organization's needs.
+- ## Learning objectives
+	- Describe Fabric admin tasks
+	- Navigate the admin center
+	- Manage user access
+	- Govern data in Fabric
+- # Introduction
+	-

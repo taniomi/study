@@ -1,4 +1,6 @@
-## Learning objectives
+- [Module](https://learn.microsoft.com/en-gb/training/modules/get-started-data-science-fabric/)
+- [Badge](https://learn.microsoft.com/api/achievements/share/en-us/taniomi/PLUG2KE4?sharingId=BF42B601A1EE754B)
+- ## Learning objectives
 	- Understand the data science process
 	- Train models with notebooks in Microsoft Fabric
 	- Track model training metrics with MLflow and experiments
@@ -74,4 +76,14 @@
 	- To compare experiment runs, you can track parameters, metrics, and artifacts for each run.
 	- By tracking your work with MLflow, you can compare model training iterations and decide which configuration resulted in the best model for your use case.
 - ## Understand models
-	-
+	- After the training of a model, it is used for scoring. Scoring is using the model on new data, to obtain predictions and insights.
+	- When you train and track a model with MLflow, artifacts are stored within the experiment run to represent your model and its metadata. You can save these artifacts in Microsoft Fabric as a **model**.
+	- A **model** can have multiple versions by training and saving it under the same name.
+	- ![models.png](../assets/models_1748608887644_0.png)
+- ### Use a model to generate insights
+	- `PREDICT` function to generate predictions.
+	  id:: 6839a7b9-158c-43a5-8d42-492e547f7e91
+	- E.g.: Predicting sales data for the next week. The forecasted sales data is stored as a table in a lakehouse, which can be consumed by Power BI reports for the business users to consume.
+- # Module assessment
+	- Which feature in Microsoft Fabric should you use to review the results of MLflow's tracking through a user interface?
+		- Experiments
