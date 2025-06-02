@@ -9,6 +9,10 @@ tags:: [[data-eng]], [[python]]
 	- ```bash
 	  uv pip compile - -o requirements.txt --upgrade
 	  ```
+- ## Installing packages from a private GitHub repo
+	- ```bash
+	  uv add --dev git+https://{ $GITHUB_PAT }@github.com/atter-data/atter-lib.git
+	  ```
 - # Running scripts[^3]
 	- ```bash
 	  uv run example.py
