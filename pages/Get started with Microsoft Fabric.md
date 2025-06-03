@@ -41,4 +41,7 @@ tags:: [[microsoft-learning]], [[data-eng]]
   :LOGBOOK:
   CLOCK: [2025-05-27 Tue 10:28:28]--[2025-05-30 Fri 09:50:57] =>  71:22:29
   :END:
-- TODO [[Administer a Microsoft Fabric environment]] • [Module](https://learn.microsoft.com/en-gb/training/modules/administer-fabric/) • 34 min
+- DOING [[Administer a Microsoft Fabric environment]] • [Module](https://learn.microsoft.com/en-gb/training/modules/administer-fabric/) • 34 min
+  :LOGBOOK:
+  CLOCK: [2025-06-03 Tue 09:12:54]
+  :END:
