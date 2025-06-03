@@ -17,9 +17,13 @@ tags:: [[pandas]]
 		  ```
 - ## What to do
 	- ```python
+	  # if filtering on condition
 	  df.loc[condition, 'column_name'] = new_value
+	  
+	  # if changing the entire column type, it is fine to do this
+	  df['column_name'] = df['column_name'].astype(str)
 	  
 	  # e.g.
 	  df.loc[df['x'] > y, 'x'] = z
-	  df.loc[:, 'x'] = df['x'].astype(str)
+	  df['x'] = df['x'].astype(str)
 	  ```
