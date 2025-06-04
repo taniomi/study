@@ -1,5 +1,5 @@
 - [Module](https://learn.microsoft.com/en-us/training/modules/administer-fabric/)
-- [Badge]()
+- [Badge](https://learn.microsoft.com/api/achievements/share/en-us/taniomi/3AQA8MNH?sharingId=BF42B601A1EE754B)
 - ---
 - Microsoft Fabric is a SaaS solution for end-to-end data analytics. As an administrator, you can configure features and manage access to suit your organization's needs.
 - ## Learning objectives
@@ -75,4 +75,29 @@
 	- The admin monitoring workspace includes the Feature Usage and Adoption dataset and report, which together provide insights on the usage and performance of your Fabric environment.
 	- ![admin-monitoring-report.png](../assets/admin-monitoring-report_1748954710096_0.png)
 - # Manage Fabric security
-	-
+- ## Manage users: assign and manage licenses
+	- **User licenses** control the level of user access and functionality within the Fabric environment.
+	- License management is done through the **Microsoft 365 admin center**.
+	- Ensure access to needed data and analytics.
+	- Secure sensitive data and ensure compliance with data protection laws and regulations.
+	- Control costs allocating licenses efficiently.
+- ## Manage items and sharing
+	- Manage how user share and distribute content with others.
+	- Manage the interaction of users with items, such as data warehouses, data pipelines, datasets, reports, dashboards.
+	- Grant access to the workspace app for access to reports or grant access to the workspace for collaboration and development.
+- # Govern data in Fabric
+	- *Endorsement* is a way for you as an admin to designate specific Fabric items as trusted and approved for use across the organization.
+	- Admins can also make use of the *scanner API* to scan Fabric items for sensitive data, and the *data lineage* feature to track the flow of data through Fabric.
+- ## Endorse Fabric content
+	- **Endorsement** is a key governance feature that builds trust in your data assets by marking Fabric items as reviewed and approved. Endorsed items display a badge, signaling to users that these assets are reliable.
+	- **Promoted** Fabric content appears with a Promoted badge in the Fabric portal. Workspace members with the contributor or admin role can promote content within a workspace. The Fabric admin can promote content across the organization.
+	- **Certified** content requires a more formal process that involves a review of the content by a designated reviewer. Content appears with a Certified badge in the Fabric portal. Admins manage the certification process and can customize it to meet the needs of your organization.
+- ## Scan for sensitive data
+	- *Metadata scanning* facilitates governance of data by enabling cataloging and reporting on all the metadata of your organization's Fabric items.
+	- The *scanner API* is a set of Admin REST APIs that allows you to scan Fabric items for sensitive data. Use the scanner API to scan data warehouses, data pipelines, datasets, reports, and dashboards for sensitive data. The scanner API can be used to scan both structured and unstructured data.
+- ## Track data lineage
+	- *Data lineage* is the ability to track the flow of data through Fabric, also known as *impact analysis*.
+	- Data lineage allows you to see where data comes from, how it's transformed, and where it goes. The lineage view in workspaces helps you understand the data that is available in Fabric, and how it's being used.
+- ## Report on sensitive data
+	- Microsoft Purview hub (preview): manage and govern your organization's Fabric data estate. Reports about sensitive data, item endorsements and domains.
+	- Microsoft Purview portal capabilities: such as Data Catalog, Information Protection, Data Loss Prevention, and Audit.

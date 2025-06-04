@@ -1,0 +1,2 @@
+- [Module](https://learn.microsoft.com/en-us/training/modules/secure-data-warehouse-in-microsoft-fabric/)
+- [Badge]()

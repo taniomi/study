@@ -1,5 +1,8 @@
 tags:: [[microsoft-learning]], [[data-eng]]
 
+- [Module](https://learn.microsoft.com/en-us/training/modules/get-started-kusto-fabric/)
+- [Badge](https://learn.microsoft.com/api/achievements/share/en-us/taniomi/URMRHVN3?sharingId=BF42B601A1EE754B)
+- ---
 - DONE [[Introduction to end-to-end analytics using Microsoft Fabric]] • 22 min
   :LOGBOOK:
   CLOCK: [2025-02-10 Mon 21:48:27]--[2025-02-20 Thu 18:19:32] =>  236:31:05
@@ -41,7 +44,7 @@ tags:: [[microsoft-learning]], [[data-eng]]
   :LOGBOOK:
   CLOCK: [2025-05-27 Tue 10:28:28]--[2025-05-30 Fri 09:50:57] =>  71:22:29
   :END:
-- DOING [[Administer a Microsoft Fabric environment]] • [Module](https://learn.microsoft.com/en-gb/training/modules/administer-fabric/) • 34 min
+- DONE [[Administer a Microsoft Fabric environment]] • [Module](https://learn.microsoft.com/en-gb/training/modules/administer-fabric/) • 34 min
   :LOGBOOK:
-  CLOCK: [2025-06-03 Tue 09:12:54]
+  CLOCK: [2025-06-03 Tue 09:12:54]--[2025-06-04 Wed 09:55:24] =>  24:42:30
   :END:
