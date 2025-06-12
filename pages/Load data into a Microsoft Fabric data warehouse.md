@@ -2,7 +2,7 @@
   :LOGBOOK:
   CLOCK: [2025-06-04 Wed 10:07:14]--[2025-06-04 Wed 10:07:14] =>  00:00:00
   :END:
-- [Badge]()
+- [Badge](https://learn.microsoft.com/api/achievements/share/en-us/taniomi/7KGKHM8Z?sharingId=BF42B601A1EE754B)
 - ## Learning objectives
 	- Learn different strategies to load data into a data warehouse in Microsoft Fabric.
 	- Learn how to build a data pipeline to load a warehouse in Microsoft Fabric.
@@ -18,7 +18,7 @@
 	  | Data extraction | It involves connecting to the source system and collecting necessary data for analytical processing. |
 	  | Data transformation | It involves a series of steps performed on the extracted data to convert it into a standard format. Combining data from different tables, cleaning data, deduplicating data, and performing data validations.|
 	  | Data loading | The extracted and transformed data are loaded into the fact and dimension tables. For an incremental load, this involves periodically applying ongoing changes as per requirement. This process often involves reformatting the data to ensure its quality and compatibility with the data warehouse schema.  |
-	  | Post-load optimizations | Once the data is loaded, certain optimizations can be performed to enhance the performance of the data warehouse.|
+	  | Post-load optimizations | Once the data is loaded, certain optimizations can be performed to enhan/`/ce the performance of the data warehouse.|
 - # Explore data load strategies
 - ## Understand data ingestion and data load operations
 	- **Data ingestion/extract** is about moving raw data from various sources into a central repository.
@@ -55,4 +55,55 @@
 	- The staged fact data usually includes business keys for the related dimensions, so your loading logic must look up the corresponding surrogate keys. When dealing with slowly changing dimensions in the data warehouse, it's crucial to identify the appropriate version of the dimension record to ensure the correct surrogate key is used. This matches the event recorded in the fact table with the state of the dimension at the time the fact occurred.
 	- In many cases, you can retrieve the latest "current" version of the dimension. However, sometimes you might need to find the correct dimension record based on DateTime columns that indicate the period of validity for each version of the dimension.
 - # Use data pipelines to load a warehouse
-	-
+	- Microsoft Fabric's Warehouse provides various data ingestion tools that offer coding or noncoding experiences.
+	- Data pipeline can be used for creating data workflows that move and transform data at scale. The data pipelines can be scheduled to perform the actions regularly.
+- # Load data using T-SQL
+- ## Use COPY statement
+	- The [COPY statement](https://learn.microsoft.com/en-us/sql/t-sql/statements/copy-into-transact-sql) serves as the main method for importing data into the Warehouse. It facilitates efficient data ingestion from an external Azure storage account.
+	- Some functionalities offered by the COPY statement include: specify the format of the source file, designate a location for storing rows that are rejected during the import process, skip header rows, among other configurable options.
+	- The option to store rejected rows separately is useful for data cleaning and quality control. It allows you to easily identify and investigate any issues with the data that weren't successfully imported.
+- ### Load multiple files
+	- The ability to specify wildcards and multiple files in the storage location path allows the COPY statement to handle bulk data loading efficiently. This is useful when dealing with large datasets distributed across multiple files.
+	- Multiple file locations can only be specified from the same storage account and container via a comma-separated list.
+	- ```SQL
+	  COPY INTO my_table
+	  FROM 'https://myaccount.blob.core.windows.net/myblobcontainer/folder0/*.csv, 
+	    https://myaccount.blob.core.windows.net/myblobcontainer/folder1/'
+	  WITH (
+	    FILE_TYPE = 'CSV',
+	    CREDENTIAL=(IDENTITY= 'Shared Access Signature', SECRET='<Your_SAS_Token>')
+	    FIELDTERMINATOR = '|'
+	  )
+	  ```
+- ## Load table from other warehouses and lakehouses
+	- To reference the data asset, ensure that you use [three-part naming](https://learn.microsoft.com/en-us/sql/t-sql/language-elements/transact-sql-syntax-conventions-transact-sql) to combine data from tables on these workspace assets. You can then use `CREATE TABLE AS SELECT` (CTAS) and `INSERT...SELECT` to load the data into the warehouse.
+	- | SQL Statement | Description | 
+	  |-|-| 
+	  | [CREATE TABLE AS SELECT](https://learn.microsoft.com/en-us/sql/t-sql/statements/create-table-as-select-azure-sql-data-warehouse) | Allows you to create a new table based on the output of a `SELECT` statement. This operation is often used for creating a copy of a table or for transforming and loading the results of complex queries. |
+	  | [INSERT...SELECT](https://learn.microsoft.com/en-us/sql/t-sql/statements/insert-transact-sql) | Allows you to insert data from one table into another. It’s useful when you want to copy data from one table to another without creating a new table. |
+- # Load and transform data with Dataflow Gen2
+	- Dataflow Gen2 is basically Power Query on steroids.
+	- The basic process will be:
+		- Create a dataflow
+		- Import data
+		- Transform data with Copilot
+		- Add a data destination
+		- Publish a dataflow
+- ## Add a data destination
+	- After transforming the data, we need to send it to storage.
+	- The available destination options:
+		- Azure SQL Database
+		- Lakehouse
+		- Azure Data Explorer (Kusto)
+		- Azure Synapse Analytics (SQL DW)
+		- Warehouse
+- # Summary
+	- There’s no one-size-fits-all solution for loading your data. The best approach depends on the specifics of your business requirement and the question you’re trying to answer.
+	- When it comes to loading data in a data warehouse, there are several considerations to keep in mind.
+	- |**Consider:**|**Description**|
+	  |-|-|
+	  |Load volume & frequency |Assess data volume and load frequency to optimize performance.|
+	  |Governance |Any data that lands in OneLake is governed by default.|
+	  |Data mapping |Manage mapping from source to staging to warehouse.|
+	  |Dependencies |Understand dependencies in the data model for loading dimensions.|
+	  |Script design |Design efficient import scripts considering column names, filtering rules, value mapping, and database indexing.|
