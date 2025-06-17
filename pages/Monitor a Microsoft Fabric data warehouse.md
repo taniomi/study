@@ -1,2 +1,13 @@
 - [Module](https://learn.microsoft.com/en-us/training/modules/monitor-fabric-data-warehouse/)
 - [Badge]()
+- ## Learning objectives
+	- Monitor capacity unit usage with the Microsoft Fabric Capacity Metrics app.
+	- Monitor current activity in the data warehouse with dynamic management views.
+	- Monitor querying trends with query insights views.
+- # Introduction
+	- t's important to monitor a data warehouse to:
+		- track and manage costs;
+		- identify and resolve query performance issues;
+		- gain insights into how data is being used.
+- # Monitor capacity metrics
+	-
